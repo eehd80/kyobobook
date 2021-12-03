@@ -4,6 +4,7 @@
     color: #333;
     padding: 20px 40px 40px;
     position: relative;
+    max-width: 1900px;
 }
 
 #footer .row-1 {
