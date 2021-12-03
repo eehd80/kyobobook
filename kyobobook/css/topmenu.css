@@ -1,0 +1,313 @@
+.gnb .container.mobile {
+	width: 100% !important
+}
+
+.sidemenu {
+	background: white;
+	height: auto !important;
+}
+
+.sidemenu img {
+	width: 100% !important;
+	height: auto !important;
+}
+
+#scroll {
+	width: 80% !important;
+	max-width: 480px;
+	right: 0;
+}
+
+.sidemenu .closebtn {
+	width: 5%;
+	min-width: 20px;
+	top: 0;
+	right: 0;
+	margin-top: 4%;
+	margin-right: 4%;
+	top: 22px;
+	right: 10px;
+	width: 30px;
+}
+
+.sidemenu .rootmenu_name {
+	margin: 0;
+	margin-top: 40px;
+	max-width: 140px;
+	margin-left: 25px;
+	margin-bottom: 10px;
+}
+
+.sidemenu .vol-wrapper {
+	margin-left:25px;
+}
+
+.sidemenu .vol-wrapper span.year::before {
+	content: '/';
+}
+.sidemenu .text {
+	margin-left: 25px;
+	margin-bottom: 1%;
+}
+
+.sidemenu .text .text2 {
+	color: #0ba737;
+}
+
+.sidemenu .vol {
+	font-size: 1.2rem;
+}
+
+.sidemenu .chapter {
+	background-color: #0092d7;
+	color: white;
+	display: inline-block;
+	padding: 6px 15px;
+	padding-left: 25px;
+	margin-top: 4%;
+}
+
+.sidemenu .list {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	padding: 5px 0px;
+	margin-top: 15px;
+}
+
+.sidemenu .list li {
+	display: block;
+	margin: 0;
+	padding: 8px 25px;
+}
+
+.sidemenu .list li .left {
+	width: 60px;
+	height: 60px;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.sidemenu .list li .right {
+	left: 0;
+	display: block;
+	margin-left: 72px;
+	padding-left: 0;
+	padding-top: 10px;
+}
+
+.sidemenu .list li .menu_name {
+	color: #0197d7;
+	font-size: 1.0rem;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.sidemenu .list li .menu_description1 {
+	font-size: 0.95rem;
+	color: rgba(234, 087, 005, 1);
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom: 4px;
+	max-width: 350px;
+}
+
+.sidemenu .list li.current {
+	background: rgba(038, 103, 172, 1);
+}
+
+.sidemenu .list li.current .menu_name {
+	color: white !important;
+}
+
+.sidemenu .list li.current .menu_description1 {
+	color: white;
+}
+
+.sidemenu .snslist {
+	margin: 0px 15px;
+	padding: 5px 0;
+	border: 0;
+	margin-top: 10px;
+	border-top: 1px solid rgba(000, 146, 215, 1);
+	text-align: right;
+}
+
+.sidemenu .snslist li {
+	display: inline-block;
+	width: 15%;
+	max-width: 55px;
+	margin: 4.5% 1.5%;
+	vertical-align: bottom;
+	overflow: visible;
+}
+
+@media (max-width: 767px) { /* 태블릿보다작은,화웨이세로(xs) : 0 ~ 767 */
+	.sidemenu .closebtn { /* width: 28px; */
+		
+	}
+	.sidemenu .vol {
+		font-size: 1.1rem;
+	}
+	.sidemenu .list li .menu_description1 {
+		
+	}
+	.sidemenu .closebtn {
+		width: 22px;
+		top: 15px;
+	}
+	.sidemenu .rootmenu_name {
+		margin: 0;
+		margin-top: 20px;
+		width: 55%;
+		min-width: 170px;
+		margin-left: 15px;
+		margin-bottom: 0px;
+	}
+	.sidemenu .vol-wrapper {
+		margin-left:15px;
+	}
+	.sidemenu .text {
+		margin-left: 15px;
+	}
+	.sidemenu .chapter {
+		padding-left:15px;
+	}
+	.sidemenu .list {
+		padding: 0;
+		margin: 0;
+		border: 0;
+		padding: 5px 0px;
+		margin-top: 2%;
+	}
+	.sidemenu .list li {
+		display: block;
+		margin: 0;
+		padding: 7px 15px;
+	}
+	
+	.sidemenu .list li .right {
+		/* left: 0; */
+		/* display: block; */
+		/* margin-left: 68px; */
+		/* padding-left: 0; */
+		/* padding-top: 3px; */
+	}
+	.sidemenu .list li .menu_name {
+		color: #0197d7;
+		font-size: 1.0rem;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.sidemenu .list li .menu_description1 {
+		font-size: 0.95rem;
+		color: rgba(234, 087, 005, 1);
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		/* margin-bottom: 1px; */
+		max-width: 350px;
+	}
+	.sidemenu .list li.current {
+		background: rgba(038, 103, 172, 1);
+	}
+	.sidemenu .list li.current .menu_name {
+		color: white !important;
+	}
+	.sidemenu .list li.current .menu_description1 {
+		color: white;
+	}
+}
+
+@media ( max-width : 425px) { /* 아이폰6plus,아이폰5.. : 0 ~ 500 */
+	.sidemenu .closebtn {
+		
+	}
+	.sidemenu .list li .left {
+		
+	}
+	.sidemenu .list li .right {
+		
+	}
+	.sidemenu .list li .menu_name {
+		font-size: 0.9rem;
+	}
+	.sidemenu .list li .menu_description1 {
+		font-size: 0.8rem;
+		letter-spacing: -1px;
+	}
+	.sidemenu .snslist li {
+		
+	}
+}
+
+.sidemenu {
+	background: #ffffff;
+	padding: 0;
+	position: fixed;
+	position: fixed;
+}
+
+.sidemenu #scrollIn {
+	padding: 0 3%;
+	padding: 0 !important;
+	padding-bottom: 110px !important;
+} /* 이부분이 사이드메뉴 하단 여백임 */
+.sidemenu .menu_name {
+	color: black !important;
+	font-size: 1.0rem;
+	letter-spacing: -1px;
+	line-height: 1.3;
+}
+
+.sidemenu .otherwebzinebg {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	padding: 0 15px;
+}
+
+.sidemenu .otherwebzinebg .select_wrapper {
+	position: relative;
+}
+
+.sidemenu .otherwebzine {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	opacity: 0;
+	width: 100%;
+	height: 40px;
+}
+
+.sidemenu .otherwebzinetext {
+	z-index: 1;
+	background: #0092d7;
+	border: 1px solid rgba(0, 076, 157, 1);
+	color: white;
+	font-size: 0.8rem;
+	padding: 2px 6px;
+}
+
+.sidemenu .otherwebzinearrow {
+	position: absolute;
+	top: 11px;
+	right: 22px;
+	width: 13px !important;
+	z-index: 3;
+}
+
+.sidemenubg2 {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 61%;
+	background: #f5948d;
+}

@@ -1,0 +1,32 @@
+/* .fouc { */
+/* 	display:none; */
+/* } */
+
+html {
+	margin: 0;
+	padding: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	letter-spacing:0px;
+}
+
+a {
+}
+
+p {
+	margin: 0;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;			
+}
+
+body {
+	/* font-family: Raleway, NanumBarunGothicUltraLight; */
+	/* font-family: HelveticaNeue-Light,AppleSDGothicNeo-Light,sans-serif; */
+	font-family: "nanum-square-r", "Malgun Gothic", "sans-serif";
+}
