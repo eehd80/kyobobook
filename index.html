@@ -14,7 +14,7 @@
         <!-- 공유정보 -->
         <title>교보나래 겨울호</title>
         <link rel="stylesheet" href="./js/lib/bootstrap/bootstrap.min.css" />
-        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./dist/css/reset.css" />
         <link rel="stylesheet" href="./css/font.css" />
         <link rel="stylesheet" href="./css/base.css" />
         <link rel="stylesheet" href="./js/lib/lightslider/lightslider.css" />
@@ -80,73 +80,46 @@
                                 >
                                     <span class="closebtn"> <img src="./images/comm/btn_close.png" /> </span>
                                     <p class="rootmenu_name">
-                                        <a href="/202012"><img src="./images/comm/logo-nara-w.png" alt="교보나래" /></a>
+                                        <a href="/202012"><img src="./images/comm/logo-nara.png" alt="교보나래" /></a>
                                     </p>
                                     <div class="vol-wrapper">
-                                        <span class="vol" style="color: #5469d3">VOL.20</span> <span class="year">2021 WINTER</span>
+                                        <span class="vol" style="color: #5469d3">VOL.20</span> <span class="year">2021.12</span>
                                     </div>
-                                    <p class="chapter">Special Theme</p>
-                                    <!-- <ul class="list">
-                                        <li id="1705" class="" onclick="location.href='/202012/1';">
-                                            <div class="left" style="background-image: url('/data/img/202012/OhnpQvHGWZ.png')"></div>
-                                            <div class="right">
-                                                <p class="menu_description1">편집실 LETTER</p>
-                                                <p class="menu_name">연결: 너와 나를 잇는 든든한 힘</p>
-                                            </div>
-                                        </li>
-                                        <li id="1706" class="" onclick="location.href='/202012/2';">
-                                            <div class="left" style="background-image: url('/data/img/202012/IgOriER8cb.png')"></div>
-                                            <div class="right">
-                                                <p class="menu_description1">은퇴 큐레이션</p>
-                                                <p class="menu_name">세대 공감, 뉴 노멀 시대의 은퇴</p>
-                                            </div>
-                                        </li>
-                                        <li id="1707" class="" onclick="location.href='/202012/3';">
-                                            <div class="left" style="background-image: url('/data/img/202012/Bjd6kgGFqG.png')"></div>
-                                            <div class="right">
-                                                <p class="menu_description1">스페셜 인터뷰</p>
-                                                <p class="menu_name">대법관에서 10만 구독자 유튜버가 되다</p>
-                                            </div>
-                                        </li>
-                                        <li id="1708" class="" onclick="location.href='/202012/4';">
-                                            <div class="left" style="background-image: url('/data/img/202012/FlIc2nbExj.png')"></div>
-                                            <div class="right">
-                                                <p class="menu_description1">시니어 플러스</p>
-                                                <p class="menu_name">인생 2막에 날개를 달다, 시니어 활동</p>
-                                            </div>
-                                        </li>
-                                    </ul> -->
+
                                     <ul class="snslist">
                                         <li>
-                                            <a href="https://www.iprovest.com/index.jsp" target="_blank" title="새창열림">
-                                                <img src="./images/comm/ico-home.svg" alt="교보증권" />
+                                            <a href="https://www.iprovest.com/index.jsp" class="ico-home" target="_blank" title="새창열림">
+                                                <span class="blind">교보증권</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a
                                                 href="https://facebook.com/story.php?story_fbid=133537202226437&id=101713802075444"
+                                                class="ico-facebook"
                                                 target="_blank"
                                                 title="새창열림"
                                             >
-                                                <img src="./images/comm/ico-facebook.svg" alt="페이스북" />
+                                                <span class="blind">페이스북</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a
-                                                href="https://instagram.com/kyobosecurities?utm_medium=copy_link"
+                                                href="https://www.instagram.com/kyobosecurities/"
+                                                class="ico-instagram"
                                                 target="_blank"
                                                 title="새창열림"
                                             >
-                                                <img src="./images/comm/ico-instagram.svg" alt="인스타그램" />
+                                                <span class="blind">인스타그램</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a
                                                 href="https://www.youtube.com/channel/UCcviJwrVaorhIFL4csgAz1w"
+                                                class="ico-youtube"
                                                 target="_blank"
                                                 title="새창열림"
                                             >
-                                                <img src="./images/comm/ico-youtube.svg" alt="유튜브" />
+                                                <span class="blind">유튜브</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -320,27 +293,33 @@
                     <span>함께보기</span>
                     <ul class="snslist">
                         <li>
-                            <a href="https://www.iprovest.com/index.jsp" target="_blank" title="새창열림">
-                                <i class="las la-home"></i>
+                            <a href="https://www.iprovest.com/index.jsp" class="ico-home" target="_blank" title="새창열림">
+                                <span class="blind">교보증권</span>
                             </a>
                         </li>
                         <li>
                             <a
                                 href="https://facebook.com/story.php?story_fbid=133537202226437&id=101713802075444"
+                                class="ico-facebook"
                                 target="_blank"
                                 title="새창열림"
                             >
-                                <i class="lab la-facebook-f"></i>
+                                <span class="blind">페이스북</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/kyobosecurities/" target="_blank" title="새창열림">
-                                <i class="lab la-instagram"></i>
+                            <a href="https://www.instagram.com/kyobosecurities/" class="ico-instagram" target="_blank" title="새창열림">
+                                <span class="blind">인스타그램</span>
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/channel/UCcviJwrVaorhIFL4csgAz1w" target="_blank" title="새창열림">
-                                <i class="lab la-youtube"></i>
+                            <a
+                                href="https://www.youtube.com/channel/UCcviJwrVaorhIFL4csgAz1w"
+                                class="ico-youtube"
+                                target="_blank"
+                                title="새창열림"
+                            >
+                                <span class="blind">유튜브</span>
                             </a>
                         </li>
                     </ul>
