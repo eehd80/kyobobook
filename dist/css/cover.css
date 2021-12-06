@@ -39,9 +39,12 @@
 }
 
 #header h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -100%);
     font-size: 0;
-    width: 180px;
-    max-width: 60%;
+    width: 65%;
     background-repeat: no-repeat;
     height: 166px;
     margin: 7% 0 0 0;
@@ -70,7 +73,7 @@
     position: absolute;
     width: 120px;
     text-align: center;
-    bottom: 0;
+    top: 0;
     color: #fff;
 }
 
@@ -163,7 +166,7 @@ section {
 section h2 {
     text-align: center;
     margin-bottom: 40px;
-    text-transform: uppercase;
+    font-family: "GmarketSansMedium";
 }
 
 section h2 > img {
@@ -186,10 +189,12 @@ section ul {
 }
 
 section ul li {
+    position: relative;
     overflow: hidden;
-    width: calc(33.3% - 15px);
+    width: calc(33.3% - 10px);
     max-width: 380px;
     margin-bottom: 30px;
+    padding-top: 42%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -200,37 +205,164 @@ section ul.col1 li {
     max-width: none;
     height: 480px;
 }
-section ul.col2 li {
-    width: calc(50% - 15px);
+section ul.col2 li:first-child {
+    width: calc(66.666% - 10px);
     max-width: none;
-    height: 480px;
+    height: 400px;
 }
-
 section ul li a {
+    position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
     display: block;
     width: 100%;
-    padding-bottom: 140%;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
     transition: background-color 0.5s;
     color: #fff;
 }
-
-section ul li a p {
+section ul li a::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
+    top: 0;
+    left: 0;
+    opacity: 1;
+    display: block;
     position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
+    transition: background 1s;
+}
+section ul li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+section ul li a:hover::after {
+    opacity: 0.8;
+}
+#list a .bg-hover {
+    /* background:#000; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#list a:hover .bg-hover {
+    opacity: 0.8;
+}
+
+#list a .text-wrapper {
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    text-align: left;
+    transition: all 0.5s;
+}
+
+#list a .text-wrapper .title {
+    position: relative;
+    font-family: "GmarketSansBold", sans-serif;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    height: auto;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1.3;
+    display: block;
+    text-align: left;
+    padding: 10px 0 0;
+}
+
+#list a .text-wrapper .desc {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#list a .text-wrapper .desc::before {
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s, margin 0.3s 0.3s;
+}
+
+#list a .text-wrapper .desc::before {
+    opacity: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: margin 0.1s, opacity 0.3s 0.3s;
+}
+
+#list a .text-wrapper .desc {
+    box-sizing: border-box;
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 0;
+    /* font-size: 14px; */
+    color: #fff;
+    width: 100%;
+    margin-bottom: 5%;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s;
+    z-index: 9;
     word-break: keep-all;
 }
 
-section ul li a span {
+#list a:hover .text-wrapper .desc {
+    max-height: 100px;
+    transition: max-height 0.8s;
+}
+#list .bg-hover {
+    background-color: rgb(29, 49, 106);
+}
+
+#list h3 ~ ul li.thumb-1 {
+    width: calc(33.3% - 8px);
+}
+
+#list h3 ~ ul li.thumb-2 {
+    width: calc(50% - 6px);
+}
+
+#list h3 ~ ul li.thumb-3 {
+    width: calc(66.7% - 4px);
+}
+#list h3 ~ ul li.thumb-4 {
+    width: 100%;
+}
+
+/* section ul li a span {
     display: block;
     line-height: 1.4;
     font-size: 16px;
     font-family: "GmarketSansMedium";
-}
+} */
 
 section ul li a span.category {
     font-weight: bold;
@@ -245,7 +377,7 @@ section ul li a span.category {
 
 /*thumb hover*/
 section ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 section ul li a:hover p {
@@ -262,7 +394,7 @@ section ul li a:hover p {
         /* background-position: bottom right; */
     }
     section ul.col2 li {
-        height: 310px;
+        height: 400px;
     }
 }
 

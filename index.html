@@ -1,28 +1,16 @@
 <!DOCTYPE html>
-<html class="fouc">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0 user-scalable=no" />
-        <meta property="og:type" content="website" />
-        <meta id="meta_twitter_card" name="twitter:card" content="summary_large_image" />
-        <meta id="meta_og_image_width" property="og:image:width" content="600" />
-        <meta id="meta_og_image_height" property="og:image:height" content="315" />
-        <!-- 커버 -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>교보증권 웹진 교보나래</title>
+        <meta name="title" content="교보나래" />
+        <meta name="keywords" content="교보나래" />
+        <meta name="description" content="교보나래" />
         <meta property="og:title" content="교보나래" />
-        <meta property="og:url" content="" />
+        <meta property="og:url" content="http://ibk.changer.co.kr/202012" />
+        <meta property="og:image" content="http://ibk.changer.co.kr/data/img/202012/ZkrziCgkMg.png" />
         <meta property="og:description" content="교보나래" />
-        <meta property="og:image" content="" />
-        <!-- 공유정보(페이스북) -->
-        <script type="text/javascript">
-            var url = "";
-            var shareimgbase = "";
-            var shareimg1 = "/data/img/202012/ZkrziCgkMg.png";
-            var shareimg2 = "/data/img/202012/jmppDpoDTj.png";
-            var shareMsg = "교보증권 교보나래 웹진";
-            var sharetitle = "교보증권 교보나래";
-        </script>
         <!-- 공유정보 -->
         <title>교보나래 겨울호</title>
         <link rel="stylesheet" href="./js/lib/bootstrap/bootstrap.min.css" />
@@ -51,10 +39,23 @@
         <script src="./js/lib/iscroll.js"></script>
         <script type="text/javascript" src="./js/topmenu.js?1"></script>
         <script type="text/javascript" src="./js/user_lightslider.js?1"></script>
+        <link
+            rel="stylesheet"
+            href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./dist/css/topmenu.css" />
+        <link rel="stylesheet" href="./dist/css/topbar.css" />
+        <link rel="stylesheet" href="./dist/css/cover.css" />
+        <link rel="stylesheet" href="./dist/css/footer.css" />
+        <script type="text/javascript" src="./dist/vendor/jquery/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="./dist/js/cover.js"></script>
+        <!--[if lt IE 9]>
+            <script src="./dist/vendor/html5.js"></script>
+            <script src="./dist/vendor/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
         <!-- 탑메뉴 -->
-        <link rel="stylesheet" href="./kyobobook/css/topmenu.css" />
 
         <!-- iscroll 사용함 -->
         <!-- S: 사이드메뉴 -->
@@ -77,9 +78,9 @@
                                         padding: 45px 6px 45px 32px;
                                     "
                                 >
-                                    <span class="closebtn"> <img src="./kyobobook/images/comm/btn_close.png" /> </span>
+                                    <span class="closebtn"> <img src="./images/comm/btn_close.png" /> </span>
                                     <p class="rootmenu_name">
-                                        <a href="/202012"><img src="./kyobobook/images/comm/logo-nara.png" alt="교보나래" /></a>
+                                        <a href="/202012"><img src="./images/comm/logo-nara-w.png" alt="교보나래" /></a>
                                     </p>
                                     <div class="vol-wrapper">
                                         <span class="vol" style="color: #5469d3">VOL.20</span> <span class="year">2021 WINTER</span>
@@ -116,34 +117,39 @@
                                         </li>
                                     </ul> -->
                                     <ul class="snslist">
-                                        <li onclick="kakaolink()">
-                                            <img src="./kyobobook/images/comm/share_kakao.png" />
+                                        <li>
+                                            <a href="https://www.iprovest.com/index.jsp" target="_blank" title="새창열림">
+                                                <img src="./images/comm/ico-home.svg" alt="교보증권" />
+                                            </a>
                                         </li>
-                                        <li onclick="storylink()">
-                                            <img src="./kyobobook/images/comm/share_story.png" />
+                                        <li>
+                                            <a
+                                                href="https://facebook.com/story.php?story_fbid=133537202226437&id=101713802075444"
+                                                target="_blank"
+                                                title="새창열림"
+                                            >
+                                                <img src="./images/comm/ico-facebook.svg" alt="페이스북" />
+                                            </a>
                                         </li>
-                                        <li onclick="bandlink()"><img src="./kyobobook/images/comm/share_band.png" /></li>
-                                        <li onclick="facebooklink()">
-                                            <img src="./kyobobook/images/comm/share_face.png" />
+                                        <li>
+                                            <a
+                                                href="https://instagram.com/kyobosecurities?utm_medium=copy_link"
+                                                target="_blank"
+                                                title="새창열림"
+                                            >
+                                                <img src="./images/comm/ico-instagram.svg" alt="인스타그램" />
+                                            </a>
                                         </li>
-                                        <li onclick="twitterlink()">
-                                            <img src="./kyobobook/images/comm/share_twit.png" />
+                                        <li>
+                                            <a
+                                                href="https://www.youtube.com/channel/UCcviJwrVaorhIFL4csgAz1w"
+                                                target="_blank"
+                                                title="새창열림"
+                                            >
+                                                <img src="./images/comm/ico-youtube.svg" alt="유튜브" />
+                                            </a>
                                         </li>
                                     </ul>
-                                    <div class="otherwebzinebg">
-                                        <div class="select_wrapper">
-                                            <select
-                                                name="otherwebzine"
-                                                class="otherwebzine"
-                                                onchange="javascript:sideotherwebzineChanged();"
-                                            >
-                                                <option selected disabled>지난 호 보기</option>
-                                                <option value="/202112">2021 겨울호</option>
-                                            </select>
-                                        </div>
-                                        <p class="otherwebzinetext">이전호 보기</p>
-                                        <img class="otherwebzinearrow" src="./kyobobook/images/comm/btn_archieve.png" />
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -152,57 +158,34 @@
             </div>
         </div>
         <!-- E: 사이드메뉴 -->
-
-        <script>
-            $(function () {
-                var selectField = $(".otherwebzine")[0];
-                selectField.addEventListener(
-                    "touchstart" /*'mousedown'*/,
-                    function (e) {
-                        e.stopPropagation();
-                    },
-                    false,
-                );
-                selectField.addEventListener(
-                    "mousedown",
-                    function (e) {
-                        e.stopPropagation();
-                    },
-                    false,
-                );
-            });
-            function sideotherwebzineChanged() {
-                location.href = $(".otherwebzine").val();
-            }
-        </script>
-        <!-- 본문 -->
-        <link rel="stylesheet" href="./kyobobook/css/cover.css" />
-        <script type="text/javascript" src="./kyobobook/js/cover.js" charset="utf-8"></script>
         <div class="main-wrapper">
-            <header id="header" style="background-image: url(./kyobobook/images/data/202112/bg-header-211203.jpg)">
-                <h1 style="background-image: url(./kyobobook/images/comm/logo-nara.png)">교보나래</h1>
-                <div class="quote">
-                    <img src="./kyobobook/images/data/202112/img-quote.png" alt="" />
-                </div>
+            <header id="header" style="background-image: url(./images/data/202112/bg-header-211206.jpg)">
+                <h1 style="background-image: url(./images/comm/logo-nara-w.png)">교보나래</h1>
+                <!-- <div class="wrap-txt">
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div> -->
+
+                <!-- <div class="quote">
+                    <img src="./images/data/202112/img-quote.png" alt="" />
+                </div> -->
                 <div class="bottom-wrapper">
-                    <div class="vol-wrapper" style="background-color: #4dab24">
+                    <!-- <div class="vol-wrapper" style="background-color: #4dab24">
                         <span class="vol">VOL.20</span> <span class="year">2021 WINTER</span>
-                    </div>
+                    </div> -->
                     <div class="ibk-logo" style="background-color: #003a76">
-                        <img src="./kyobobook/images/comm/logo-kyobo.png" alt="교보증권" />
+                        <img src="./images/comm/logo-kyobo.png" alt="교보증권" />
                     </div>
                 </div>
             </header>
             <div id="article">
-                <link rel="stylesheet" href="./kyobobook/css/topbar.css" />
                 <nav id="nav" class="">
                     <div class="logo">
-                        <a href="#"><img src="./kyobobook/images/comm/logo-nara.png" alt="교보나래" /></a>
+                        <a href="#"><img src="./images/comm/logo-nara.png" alt="교보나래" /></a>
                     </div>
                     <ul class="cover-list">
-                        <li><a href="#section-01">SPECIAL THEME</a></li>
-                        <li><a href="#section-02">KYOBO STORY</a></li>
-                        <li><a href="#section-03">LIFE STORY</a></li>
+                        <li><a href="#section-01">Special Theme </a></li>
+                        <li><a href="#section-02">Kyobo Story </a></li>
+                        <li><a href="#section-03">Life Story </a></li>
                     </ul>
                     <div class="vol-wrapper">
                         <span class="vol" style="color: #5469d3">VOL.20</span> <span class="year">2021 WINTER</span>
@@ -211,7 +194,7 @@
                         <div
                             class="menubtn right"
                             onclick="$('.gnb').toggle();"
-                            style="background-image: url(./kyobobook/images/comm/menu.png)"
+                            style="background-image: url(./images/comm/menu.png)"
                         ></div>
                     </div>
                 </nav>
@@ -223,11 +206,17 @@
                         <h2>Special Theme</h2>
 
                         <ul class="list col1">
-                            <li class="hidden-xs" style="background-image: url('./kyobobook/images/data/202112/thumb-211203-2.jpg')">
+                            <li class="thumb-4" style="background-image: url('./images/data/202112/thumb-211203-2.jpg')">
                                 <a href="#">
-                                    <p style="color: #ffffff">
-                                        <span class="category">은퇴 큐레이션</span> <span>세대 공감, 뉴 노멀 시대의 은퇴</span>
-                                    </p>
+                                    <span class="bg-hover"></span>
+                                    <div class="text-wrapper">
+                                        <p class="title">
+                                            <span>은퇴 큐레이션</span>
+                                        </p>
+                                        <p class="desc">
+                                            <span>세대 공감, 뉴 노멀 시대의 은퇴</span>
+                                        </p>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -238,49 +227,78 @@
                     </section>
 
                     <section id="section-02">
-                        <h2>KYOBO STORY</h2>
+                        <h2>Kyobo Story</h2>
 
-                        <ul class="list col2">
-                            <li style="background-image: url('./kyobobook/images/data/202112/thumb-211203-1.jpg')">
+                        <ul class="list">
+                            <li style="background-image: url('./images/data/202112/thumb-211203-3.jpg')">
                                 <a href="#">
-                                    <p>
-                                        <span class="category">재활용의 발견</span> <span>와인 코르크 재활용 리폼 다육이 화분 만들기</span>
-                                    </p>
+                                    <span class="bg-hover"></span>
+                                    <div class="text-wrapper">
+                                        <p class="title">
+                                            <span>드림이 소식</span>
+                                        </p>
+                                        <p class="desc">
+                                            <span>한결같은 마음, 지속적인 후원으로 따뜻한 기부를 실천하다.</span>
+                                        </p>
+                                    </div>
                                 </a>
                             </li>
-
-                            <li style="background-image: url('./kyobobook/images/data/202112/thumb-211203-3.jpg')">
+                            <li style="background-image: url('./images/data/202112/thumb-211203-5.jpg')">
                                 <a href="#">
-                                    <p style="color: #ffffff">
-                                        <span class="category">드림이 소식</span>
-                                        <span>한결같은 마음, 지속적인 후원으로 따뜻한 기부를 실천하다.</span>
-                                    </p>
+                                    <span class="bg-hover"></span>
+                                    <div class="text-wrapper">
+                                        <p class="title">
+                                            <span>KYOBO TIMES</span>
+                                        </p>
+                                        <p class="desc">
+                                            <span>교보 뉴스</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li style="background-image: url('./images/data/202112/thumb-211203-6.jpg')">
+                                <a href="#">
+                                    <span class="bg-hover"></span>
+                                    <div class="text-wrapper">
+                                        <p class="title">
+                                            <span>KYOBO 머니텐 TV</span>
+                                        </p>
+                                        <p class="desc">
+                                            <span>DT In Culture : 문화콜라보</span>
+                                        </p>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
                     </section>
 
                     <section id="section-03">
-                        <h2>LIFE STORY</h2>
-                        <ul class="list">
-                            <li style="background-image: url('./kyobobook/images/data/202112/thumb-211203-4.jpg')">
+                        <h2>Life Story</h2>
+                        <ul class="list col2">
+                            <li style="background-image: url('./images/data/202112/thumb-211203-1.jpg')">
                                 <a href="#">
-                                    <p style="color: #ffffff">
-                                        <span class="category">활력의 식탁</span> <span>투움바 파스타 만들기</span>
-                                    </p>
+                                    <span class="bg-hover"></span>
+                                    <div class="text-wrapper">
+                                        <p class="title">
+                                            <span>재활용의 발견</span>
+                                        </p>
+                                        <p class="desc">
+                                            <span>와인 코르크 재활용 리폼 다육이 화분 만들기</span>
+                                        </p>
+                                    </div>
                                 </a>
                             </li>
-                            <!-- 10번 썸네일 모바일 -->
-                            <li style="background-image: url('./kyobobook/images/data/202112/thumb-211203-5.jpg')">
+                            <li style="background-image: url('./images/data/202112/thumb-211203-4.jpg')">
                                 <a href="#">
-                                    <p style="color: #ffffff"><span class="category">KYOBO TIMES</span> <span>교보 뉴스</span></p>
-                                </a>
-                            </li>
-                            <li style="background-image: url('./kyobobook/images/data/202112/thumb-211203-6.jpg')">
-                                <a href="#">
-                                    <p style="color: #ffffff">
-                                        <span class="category">KYOBO 머니텐 TV</span> <span>DT In Culture : 문화콜라보</span>
-                                    </p>
+                                    <span class="bg-hover"></span>
+                                    <div class="text-wrapper">
+                                        <p class="title">
+                                            <span>활력의 식탁</span>
+                                        </p>
+                                        <p class="desc">
+                                            <span>투움바 파스타 만들기</span>
+                                        </p>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -291,97 +309,58 @@
             </div>
         </div>
 
-        <!-- 카카오 공유용 변수 생성 -->
-        <script>
-            var listUrl = "202012";
-            var listTitle = "2020 겨울호";
-
-            var listImg1 = shareimgbase + "/data/img/202012/uIEylrK99S.png";
-            var listTxt1 = "시니어 플러스";
-            var listLink1 = listUrl + "/4";
-
-            var listImg2 = shareimgbase + "";
-            var listTxt2 = "";
-            var listLink2 = listUrl + "/1";
-
-            var listImg3 = shareimgbase + "/data/img/202012/EOyEFK1Fxy.png";
-            var listTxt3 = "은퇴 큐레이션";
-            var listLink3 = listUrl + "/2";
-
-            var listImg4 = shareimgbase + "/data/img/202012/QrieLGcosa.png";
-            var listTxt4 = "스페셜 인터뷰";
-            var listLink4 = listUrl + "/3";
-
-            //공유버튼 변경
-            $(document).ready(function () {
-                $(".snslist > li:first-child").attr("onclick", "kakaoList2019()");
-            });
-        </script>
-
         <!-- 팝업 -->
         <!-- 푸터 -->
-        <link rel="stylesheet" href="./kyobobook/css/footer.css" />
 
         <div id="footer">
             <div class="row-1">
-                <span class="footer-logo"><img src="./kyobobook/images/comm/logo-kyobo-b.png" alt="" /></span>
+                <span class="footer-logo"><img src="./images/comm/logo-kyobo-b.png" alt="" /></span>
 
                 <div class="sns-wrapper">
                     <span>함께보기</span>
                     <ul class="snslist">
-                        <li onclick="kakaolink()"><img src="./kyobobook/images/comm/share_kakao.svg" /></li>
-                        <li onclick="storylink()"><img src="./kyobobook/images/comm/share_story.svg" /></li>
-                        <li onclick="facebooklink()"><img src="./kyobobook/images/comm/share_face.svg" /></li>
-                        <li onclick="twitterlink()"><img src="./kyobobook/images/comm/share_twit.svg" /></li>
-                        <li onclick="bandlink()"><img src="./kyobobook/images/comm/share_band.svg" /></li>
+                        <li>
+                            <a href="https://www.iprovest.com/index.jsp" target="_blank" title="새창열림">
+                                <i class="las la-home"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://facebook.com/story.php?story_fbid=133537202226437&id=101713802075444"
+                                target="_blank"
+                                title="새창열림"
+                            >
+                                <i class="lab la-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kyobosecurities/" target="_blank" title="새창열림">
+                                <i class="lab la-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UCcviJwrVaorhIFL4csgAz1w" target="_blank" title="새창열림">
+                                <i class="lab la-youtube"></i>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="row-2">
                 <p class="desc">
-                    발행일 2021년 12월 5일(통권 1호) | 등록번호 서울 중. 바00140 | 발행인 윤종원 | 편집인 황인범 | 발행처
-                    교보증권(www.iprovest.com) <br />주소 서울특별시 중구 을지로 82, 17층(IBK 파이낸스타워) | 기획 교보증권 | 제작·인쇄
-                    경성문화사(02-786-2999) <br />교보증권 사람들 팀장 : 이기석 / 차장 : 배정호 / 과장 : 강윤정 홍혜련 / 대리 : 조지수,
-                    정희수, 임수정, 안지인
+                    발행일 2021년 12월 8일 &#40;통권 20호&#41; <span class="bar">|</span> 발행처 교보증권 &#40;<a
+                        href="https://www.iprovest.com/"
+                        target="_blank"
+                        title="새창열림"
+                        >www.iprovest.com</a
+                    >&#41; <br />
+                    Copyright (c) 2021 kyobo Securities Co.,Ltd All rights Reserved.
                 </p>
                 <p class="desc sub">
-                    ※〈교보나래〉 저작권은 교보증권에 있습니다. 교보증권의 동의 없이 무단으로 이 책에 실린 모든 글과 그림, 사진을 사용할 수
+                    ※ 〈교보나래〉 저작권은 교보증권에 있습니다. 교보증권의 동의 없이 무단으로 이 책에 실린 모든 글과 그림, 사진을 사용할 수
                     없습니다. 외부 필자의 원고는 교보증권의 공식 입장과 일치하지 않을 수 있습니다.
                 </p>
             </div>
         </div>
-        <iframe name="hiddenFrame" id="hiddenframe" width="0px" height="0px" style="display: none" frameborder="0"></iframe>
-        <div class="root popupGalleryWrapper">
-            <div class="parent">
-                <div class="popupGallerybg"></div>
-                <div class="child">
-                    <div class="popupGallery">
-                        <div class="prev"></div>
-                        <img id="slide" src="/img/blank.gif" />
-                        <div class="next"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- S: PV -->
-
-        <script>
-            var webzine_idx = 1704;
-        </script>
-        <script>
-            var webzine_idx = 1704;
-        </script>
-        <script>
-            //console.log(webzine_idx);
-        </script>
-        <script src="/js/artwa_pv.js?3"></script>
-        <!-- E: PV -->
-
-        <!-- S: MENU_COVERTYPE -->
-        <script>
-            var menu_covertype = "new_ibk202002";
-        </script>
-        <!-- E: MENU_COVERTYPE -->
     </body>
 </html>
