@@ -2,6 +2,9 @@
 
 /* ----- 네비게이션 커버 ----- */
 #nav {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     background: #ffffff;
     /* padding: 0 40px; */
@@ -78,11 +81,11 @@
 }
 
 /*커버 리스트 별도로*/
-#nav {
+/* #nav {
     left: 33%;
     width: 100%;
     z-index: 9;
-}
+} */
 
 #nav .cover-list {
     position: fixed;
@@ -132,7 +135,7 @@
         margin-top: 0px;
         margin-left: auto;
         margin-right: auto;
-        padding-top: 15px;
+        padding-top: 10px;
     }
     #nav .logo a {
         display: block;

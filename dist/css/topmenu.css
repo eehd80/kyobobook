@@ -139,8 +139,6 @@
 
 .sidemenu .snslist li {
     display: inline-block;
-    width: 15%;
-    max-width: 55px;
     margin: 4.5% 1.5%;
     vertical-align: bottom;
     overflow: visible;

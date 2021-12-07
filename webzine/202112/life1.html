@@ -30,33 +30,161 @@
         <!-- <script type="text/javascript" src="../../js/lib/json2.js" charset="utf-8"></script> -->
         <!-- <script type="text/javascript" src="../../js/lib/kakao.min.js" charset="utf-8"></script> -->
         <!-- <script type="text/javascript" src="../../js/lib/kakaoLink.js" charset="utf-8"></script> -->
-        <!-- <script type="text/javascript" src="../../js/artwa_user.js?1" charset="utf-8"></script> -->
+        <script type="text/javascript" src="../../js/artwa_user.js?1" charset="utf-8"></script>
         <script type="text/javascript" src="../../js/artwa_image.js?20170711" charset="utf-8"></script>
         <!-- <script type="text/javascript" src="../../js/artwa_gallery.js?1" charset="utf-8"></script> -->
         <script type="text/javascript" src="../../js/artwa_fade.js?1" charset="utf-8"></script>
         <!-- <script type="text/javascript" src="../../js/share.js"></script> -->
         <!-- <script src="../../js/lib/lightslider/lightslider.js"></script> -->
-        <!-- <script src="../../js/lib/iscroll.js"></script> -->
+        <script src="../../js/lib/iscroll.js"></script>
         <script type="text/javascript" src="../../js/topmenu.js?1"></script>
         <!-- <script type="text/javascript" src="../../js/user_lightslider.js?1"></script> -->
         <link
             rel="stylesheet"
             href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
         />
-        <!-- <link rel="stylesheet" href="../../dist/css/topmenu.css" />
-        <link rel="stylesheet" href="../../dist/css/topbar.css" /> -->
+        <link rel="stylesheet" href="../../dist/css/topmenu.css" />
+        <!-- <link rel="stylesheet" href="../../dist/css/topbar.css" /> -->
         <link rel="stylesheet" href="../../dist/css/topbar_sub.css" />
         <!-- <link rel="stylesheet" href="../../dist/css/cover.css" /> -->
         <link rel="stylesheet" href="./dist/css/contents-202112.css" />
         <link rel="stylesheet" href="../../dist/css/footer.css" />
         <script type="text/javascript" src="../../dist/vendor/jquery/jquery-1.11.2.min.js"></script>
         <script type="text/javascript" src="../../dist/js/cover.js"></script>
+        <script src="./dist/js/menu-sub.js"></script>
         <!--[if lt IE 9]>
             <script src="./dist/vendor/html5.js"></script>
             <script src="./dist/vendor/respond.min.js"></script>
         <![endif]-->
     </head>
     <body>
+        <!-- S: 사이드메뉴 -->
+        <div class="gnb">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-sm-12">
+                        <div class="sidemenubg"></div>
+
+                        <div class="wrapper">
+                            <div id="scroll" class="sidemenu showLayer2" style="overflow: hidden">
+                                <div
+                                    id="scrollIn"
+                                    style="
+                                        overflow: hidden;
+                                        position: absolute;
+                                        top: 0px;
+                                        left: 0px;
+                                        width: 100%;
+                                        padding: 45px 6px 45px 32px;
+                                        transition-property: transform;
+                                        transform-origin: 0px 0px 0px;
+                                        transform: translate(0px) scale(1) translateZ(0px);
+                                    "
+                                >
+                                    <span class="closebtn"> <img src="../../images/comm/btn_close.png" /> </span>
+                                    <p class="rootmenu_name">
+                                        <a href="../../index.html"><img src="../../images/comm/logo-nara.png" alt="교보나래" /></a>
+                                    </p>
+                                    <div class="vol-wrapper">
+                                        <span class="vol" style="color: #5469d3">VOL.20</span> <span class="year">2020.12</span>
+                                    </div>
+                                    <p class="chapter">Special Theme</p>
+                                    <ul class="list">
+                                        <li id="1705" class="" onclick="location.href='special.html';">
+                                            <div class="left" style="background-image: url('./images/thumb-special.jpg')"></div>
+                                            <div class="right">
+                                                <p class="menu_description1">지속가능한 성장을 위한 ESG경영</p>
+                                                <p class="menu_name">이제 선택이 아닌 필수</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="chapter">Kyobo Story</p>
+                                    <ul class="list">
+                                        <li id="1709" class="" onclick="location.href='story1.html';">
+                                            <div class="left" style="background-image: url(./images/thumb-kyobo1.jpg)"></div>
+                                            <div class="right">
+                                                <p class="menu_description1">드림이 소식</p>
+                                                <p class="menu_name">한결같은 마음, 지속적인 후원으로 따뜻한 기부를 실천하다.</p>
+                                            </div>
+                                        </li>
+                                        <li id="1710" class="" onclick="location.href='story2.html';">
+                                            <div class="left" style="background-image: url(./images/thumb-kyobo2.jpg)"></div>
+                                            <div class="right">
+                                                <p class="menu_description1">KYOBO TIMES</p>
+                                                <p class="menu_name">교보 뉴스</p>
+                                            </div>
+                                        </li>
+                                        <li id="1711" class="" onclick="location.href='story3.html';">
+                                            <div class="left" style="background-image: url(./images/thumb-kyobo3.jpg)"></div>
+                                            <div class="right">
+                                                <p class="menu_description1">KYOBO 머니텐 TV</p>
+                                                <p class="menu_name">교보 디지털 Top3</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <p class="chapter">Life Story</p>
+                                    <ul class="list">
+                                        <li id="1714" class="" onclick="location.href='life1.html';">
+                                            <div class="left" style="background-image: url(./images/thumb-life1.jpg)"></div>
+                                            <div class="right">
+                                                <p class="menu_description1">재활용의 발견</p>
+                                                <p class="menu_name">다육이 화분 만들기</p>
+                                            </div>
+                                        </li>
+                                        <li id="1715" class="" onclick="location.href='life2.html'">
+                                            <div class="left" style="background-image: url(./images/thumb-life2.jpg)"></div>
+                                            <div class="right">
+                                                <p class="menu_description1">활력의 식탁</p>
+                                                <p class="menu_name">투움바 파스타 만들기</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="snslist">
+                                        <li>
+                                            <a href="https://www.iprovest.com/index.jsp" class="ico-home" target="_blank" title="새창열림">
+                                                <span class="blind">교보증권</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://facebook.com/story.php?story_fbid=133537202226437&id=101713802075444"
+                                                class="ico-facebook"
+                                                target="_blank"
+                                                title="새창열림"
+                                            >
+                                                <span class="blind">페이스북</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.instagram.com/kyobosecurities/"
+                                                class="ico-instagram"
+                                                target="_blank"
+                                                title="새창열림"
+                                            >
+                                                <span class="blind">인스타그램</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="https://www.youtube.com/channel/UCcviJwrVaorhIFL4csgAz1w"
+                                                class="ico-youtube"
+                                                target="_blank"
+                                                title="새창열림"
+                                            >
+                                                <span class="blind">유튜브</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- E: 사이드메뉴 -->
         <!-- 상단바 및 모바일 사이드메뉴 버튼 -->
         <nav id="nav" class="">
             <div class="logo">
@@ -70,105 +198,59 @@
             </ul>
 
             <div id="topbar_page">
-                <div
-                    class="menubtn right"
-                    onclick="$('.gnb').toggle();"
-                    style="background-image: url(/theme/webzine/new_ibk202002/img/top/mobile/menu.png)"
-                ></div>
+                <div class="menubtn right" onclick="$('.gnb').toggle();" style="background-image: url(../../images/comm/menu.png)"></div>
             </div>
 
             <div class="topbar-list">
                 <div class="list-bg" style="background-image: url()"></div>
                 <div class="list-wrapper">
                     <ul class="list">
-                        <li id="1705" class="" onclick="location.href='/202012/1';">
-                            <div class="left" style="background-image: url(/data/img/202012/OhnpQvHGWZ.png)"></div>
+                        <li id="1705" class="" onclick="location.href='special.html';">
+                            <div class="left" style="background-image: url(./images/thumb-special.jpg)"></div>
                             <div class="right">
-                                <p class="menu_description1">편집실 LETTER</p>
-                                <p class="menu_name">연결: 너와 나를 잇는 든든한 힘</p>
-                            </div>
-                        </li>
-                        <li id="1706" class="current" onclick="location.href='/202012/2';">
-                            <div class="left" style="background-image: url(/data/img/202012/IgOriER8cb.png)"></div>
-                            <div class="right">
-                                <p class="menu_description1">은퇴 큐레이션</p>
-                                <p class="menu_name">세대 공감, 뉴 노멀 시대의 은퇴</p>
-                            </div>
-                        </li>
-                        <li id="1707" class="" onclick="location.href='/202012/3';">
-                            <div class="left" style="background-image: url(/data/img/202012/Bjd6kgGFqG.png)"></div>
-                            <div class="right">
-                                <p class="menu_description1">스페셜 인터뷰</p>
-                                <p class="menu_name">대법관에서 10만 구독자 유튜버가 되다</p>
-                            </div>
-                        </li>
-                        <li id="1708" class="" onclick="location.href='/202012/4';">
-                            <div class="left" style="background-image: url(/data/img/202012/FlIc2nbExj.png)"></div>
-                            <div class="right">
-                                <p class="menu_description1">시니어 플러스</p>
-                                <p class="menu_name">인생 2막에 날개를 달다, 시니어 활동</p>
+                                <p class="menu_description1">지속가능한 성장을 위한 ESG경영</p>
+                                <p class="menu_name">이제 선택이 아닌 필수</p>
                             </div>
                         </li>
                     </ul>
 
                     <ul class="list">
-                        <li id="1709" class="" onclick="location.href='/202012/5';">
-                            <div class="left" style="background-image: url(/data/img/202012/uxL4vZrtRx.png)"></div>
+                        <li id="1709" class="" onclick="location.href='story1.html';">
+                            <div class="left" style="background-image: url(./images/thumb-kyobo1.jpg)"></div>
                             <div class="right">
-                                <p class="menu_description1">이슈 퇴직연금</p>
-                                <p class="menu_name">퇴직연금 구조화 상품 알아보기!<br /></p>
+                                <p class="menu_description1">드림이 소식</p>
+                                <p class="menu_name">한결같은 마음, 지속적인 후원으로 따뜻한 기부를 실천하다.</p>
                             </div>
                         </li>
-                        <li id="1710" class="" onclick="location.href='/202012/6';">
-                            <div class="left" style="background-image: url(/data/img/202012/PBRh1eBZ2R.png)"></div>
+                        <li id="1710" class="" onclick="location.href='story2.html';">
+                            <div class="left" style="background-image: url(./images/thumb-kyobo2.jpg)"></div>
                             <div class="right">
-                                <p class="menu_description1">금융자산관리</p>
-                                <p class="menu_name">호주 환급세액의 연금재원 활용과 IRP 세액공제 활용방안</p>
+                                <p class="menu_description1">KYOBO TIMES</p>
+                                <p class="menu_name">교보 뉴스</p>
                             </div>
                         </li>
-                        <li id="1711" class="" onclick="location.href='/202012/7';">
-                            <div class="left" style="background-image: url(/data/img/202012/YbBkAfkWa3.png)"></div>
+                        <li id="1711" class="" onclick="location.href='story3.html';">
+                            <div class="left" style="background-image: url(./images/thumb-kyobo3.jpg)"></div>
                             <div class="right">
-                                <p class="menu_description1">미래투자전략</p>
-                                <p class="menu_name">비대면 투자 시대…‘AI 투자’의 등장</p>
-                            </div>
-                        </li>
-                        <li id="1712" class="" onclick="location.href='/202012/8';">
-                            <div class="left" style="background-image: url(/data/img/202012/E6BugHihD0.png)"></div>
-                            <div class="right">
-                                <p class="menu_description1">은퇴생활백서</p>
-                                <p class="menu_name">고전무용 동아리 ‘솔메무용단’</p>
-                            </div>
-                        </li>
-                        <li id="1713" class="" onclick="location.href='/202012/9';">
-                            <div class="left" style="background-image: url(/data/img/202012/aqIDryHMVR.png)"></div>
-                            <div class="right">
-                                <p class="menu_description1">IBK 퇴직연금</p>
-                                <p class="menu_name">로보어드바이저로 투자상품 운용하는 법</p>
+                                <p class="menu_description1">KYOBO 머니텐 TV</p>
+                                <p class="menu_name">교보 디지털 Top3</p>
                             </div>
                         </li>
                     </ul>
 
                     <ul class="list">
-                        <li id="1714" class="" onclick="location.href='/202012/10';">
-                            <div class="left" style="background-image: url(/data/img/202012/xjrqIqcuEz.png)"></div>
+                        <li id="1714" class="" onclick="location.href='life1.html';">
+                            <div class="left" style="background-image: url(./images/thumb-life1.jpg)"></div>
                             <div class="right">
-                                <p class="menu_description1">취향 TRAVEL</p>
-                                <p class="menu_name">알프스를 잇는 몽블랑 트레킹</p>
+                                <p class="menu_description1">재활용의 발견</p>
+                                <p class="menu_name">다육이 화분 만들기</p>
                             </div>
                         </li>
-                        <li id="1715" class="" onclick="location.href='/202012/11';">
-                            <div class="left" style="background-image: url(/data/img/202012/ByD7Pmks0b.png)"></div>
+                        <li id="1715" class="" onclick="location.href='life2.html'">
+                            <div class="left" style="background-image: url(./images/thumb-life2.jpg)"></div>
                             <div class="right">
-                                <p class="menu_description1">책의 위로</p>
-                                <p class="menu_name">유령과 천문학자의 우연한 만남</p>
-                            </div>
-                        </li>
-                        <li id="1716" class="" onclick="location.href='/202012/12';">
-                            <div class="left" style="background-image: url(/data/img/202012/APPvlGdb5W.png)"></div>
-                            <div class="right">
-                                <p class="menu_description1">독자참여</p>
-                                <p class="menu_name">독자참여</p>
+                                <p class="menu_description1">활력의 식탁</p>
+                                <p class="menu_name">투움바 파스타 만들기</p>
                             </div>
                         </li>
                     </ul>
@@ -293,6 +375,8 @@
             </article>
         </div>
         <!-- //contents -->
+        <!-- 목록보기 -->
+        <a href="../../index.html" class="link-list">목록보기</a>
 
         <!-- 푸터 -->
 

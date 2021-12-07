@@ -27,11 +27,24 @@ button {
         font-size: calc(16px + 0.1vw);
     }
 }
+.container {
+    max-width: $maxWidth;
+    margin: 0 auto;
+}
+
+.link-list {
+    display: block;
+    width: 200px;
+    margin: auto;
+    padding: 10px 40px;
+    border: 1px solid $prim2;
+    color: $prim2;
+    text-align: center;
+}
 
 .contentbody {
     padding-bottom: 100px;
     text-align: center;
-    font-family: "GmarketSansMedium";
     img {
         display: block;
         width: 100%;
@@ -64,6 +77,20 @@ button {
             background: $prim1;
         }
     }
+
+    .wrap-bar {
+        margin-bottom: 50px;
+        padding: 50px 0;
+        background-color: rgba($prim1, 0.1);
+        .bar-txt {
+            width: 90%;
+            margin: auto;
+            font-weight: 300;
+        }
+    }
+}
+
+#life1 {
     .wrap-tit {
         padding: 50px 0;
         em {
@@ -87,17 +114,6 @@ button {
             }
         }
     }
-
-    .wrap-bar {
-        margin-bottom: 50px;
-        padding: 50px 0;
-        background-color: rgba($prim1, 0.1);
-        .bar-txt {
-            width: 90%;
-            margin: auto;
-            font-weight: 300;
-        }
-    }
     .cont-1 {
         dl {
             display: flex;
@@ -114,9 +130,6 @@ button {
             font-size: 0.9em;
         }
     }
-}
-
-#life1 {
     .cont-step {
         max-width: $maxWidth;
         margin: 0 auto;
@@ -229,28 +242,6 @@ button {
     }
 }
 
-// 투움바 파스타 만들기
-.life2-head {
-    position: relative;
-    height: 500px;
-    background: url(../../images/lifestory2-head.jpg) 0 0 no-repeat;
-    em {
-        background-color: $w;
-    }
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba($b, 0.3);
-    }
-    .wrap-tit {
-        @include posXY;
-    }
-}
-
 @media (max-width: 768px) {
     .contentbody {
         padding-bottom: 50px;
@@ -259,6 +250,8 @@ button {
                 display: none;
             }
         }
+    }
+    #life1 {
         .cont-1 {
             dl {
                 flex-direction: column;
@@ -267,8 +260,6 @@ button {
                 margin-bottom: 5px;
             }
         }
-    }
-    #life1 {
         .cont-step {
             width: 94%;
             margin: auto;
@@ -308,7 +299,7 @@ button {
 }
 
 @media (max-width: 576px) {
-    .contentbody {
+    #life1 {
         .wrap-tit {
             em {
                 width: 94%;
@@ -319,8 +310,6 @@ button {
                 font-size: 2.1em;
             }
         }
-    }
-    #life1 {
         .cont-1 {
             dl {
                 padding: 40px 5%;
@@ -333,6 +322,378 @@ button {
             .img {
                 height: 300px;
             }
+        }
+    }
+}
+
+// 투움바 파스타 만들기
+.life2-head {
+    position: relative;
+    // height: 500px;
+    background: url(../../images/lifestory2-head.jpg) 0 100% / cover no-repeat;
+    color: $w;
+    text-align: left;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($b, 0.3);
+    }
+    .pos-txt {
+        position: relative;
+        width: 100%;
+        max-width: $maxWidth;
+        margin: 0 auto;
+        padding: 100px 0;
+        opacity: 1;
+        p {
+            display: block;
+            opacity: 0.6;
+            line-height: 1.5;
+            font-size: 0.9em;
+        }
+    }
+    .wrap-tit {
+        margin-bottom: 70px;
+        font-size: 2.2em;
+        line-height: 1.2;
+        em {
+            display: block;
+            margin-bottom: 20px;
+            opacity: 0.5;
+            font-size: 0.6em;
+        }
+        strong {
+            display: block;
+            color: $w;
+        }
+        span {
+            display: block;
+            font-size: 0.7em;
+            font-weight: 300;
+        }
+    }
+}
+.life2-wrap-cont1 {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 75%;
+            width: 100%;
+            height: 100%;
+            background-color: $gray-e;
+        }
+    }
+    .col-left {
+        position: relative;
+        width: 30%;
+        padding: 50px 3% 50px 0;
+        background-color: $gray-e;
+        box-sizing: border-box;
+    }
+    .col-right {
+        position: relative;
+        width: 65%;
+        padding: 50px 0;
+    }
+    h3 {
+        @include ff-gm;
+        margin-bottom: 20px;
+        font-size: 2em;
+        text-align: center;
+        color: #ee7f51;
+    }
+    img {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+    .wrap-writer {
+        margin-top: 50px;
+        img {
+            overflow: hidden;
+            width: 70px;
+            height: 70px;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+    }
+    .txt-guide {
+        margin-bottom: 30px;
+        .tit-sub {
+            display: block;
+            margin-bottom: 5px;
+            color: #ee7f51;
+            @include ff-gm;
+        }
+    }
+    .lst-step {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 20px;
+        li {
+            width: 47%;
+            margin-bottom: 60px;
+        }
+        .txt {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            .num {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #ee7f51;
+                color: $w;
+                text-indent: -2px;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                width: calc(100% - 50px);
+                min-height: 55px;
+            }
+        }
+        .tip {
+            position: relative;
+            display: block;
+            margin-top: 10px;
+            padding-left: 30px;
+            font-size: 0.85em;
+            opacity: 0.7;
+            line-height: 1.5;
+            em {
+                position: absolute;
+                top: 0;
+                left: 0;
+                color: $prim2;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/* esg */
+.special-head {
+    padding: 100px 0;
+    background-color: #8dc45c;
+    text-align: right;
+    .container {
+        height: 250px;
+        background: url(../../images/special-head.jpg) 0 50% / contain no-repeat;
+        color: $w;
+    }
+    .wrap-tit {
+        margin-bottom: 70px;
+        font-size: 1.9em;
+        letter-spacing: -0.05em;
+        line-height: 1.5;
+        em {
+            display: block;
+            margin-right: 25px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            font-size: 0.9em;
+            color: yellow;
+            font-style: normal;
+        }
+        strong {
+            display: block;
+            color: $w;
+        }
+        span {
+            display: block;
+            font-size: 0.7em;
+            font-weight: 300;
+        }
+    }
+}
+
+// 교보타임즈
+#kyobo {
+    text-align: left;
+}
+.kyobo2-head {
+    padding: 100px 0;
+    background: url(../../images/kyobo2-head.jpg) 0 50% / cover no-repeat;
+    text-align: right;
+    .container {
+        height: 250px;
+        color: $w;
+    }
+    .wrap-tit {
+        @include posXY;
+        h2 {
+            display: flex;
+            font-size: 3em;
+        }
+        strong {
+            padding: 10px 25px 7px;
+            border: 3px solid $w;
+            border-right: none;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        em {
+            padding: 10px 25px 7px;
+            font-style: normal;
+            text-transform: uppercase;
+            border: 3px solid #093487;
+            color: $prim3;
+            font-weight: 800;
+            background-color: $w;
+        }
+    }
+}
+.kyobo2-cont1 {
+    margin-top: 100px;
+    .tit-sub {
+        // margin-bottom: 50px;
+        padding: 10px 0;
+        border-bottom: 3px solid $prim1;
+        color: $b;
+        font-size: 1.5em;
+        text-align: left;
+        .ico {
+            display: inline-block;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+            background-color: $prim1;
+            text-align: center;
+            vertical-align: middle;
+            color: $w;
+        }
+        i {
+            @include posXY;
+            display: inline-block;
+            font-size: 0.85em;
+            vertical-align: middle;
+        }
+    }
+}
+.lst-times {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    strong {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        color: $prim3;
+        font-size: 1.2em;
+    }
+    > li {
+        width: 50%;
+        padding: 60px 2% 20px;
+        border-right: 1px solid rgba($b, 0.1);
+        border-bottom: 1px solid rgba($b, 0.1);
+        &.w100 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 100%;
+            > div {
+                width: 48%;
+            }
+        }
+    }
+    .img-ban {
+        margin-bottom: 30px;
+    }
+
+    .list-sub {
+        margin-bottom: 30px;
+        dt {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            font-weight: bold;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 10px;
+                height: 3px;
+                background: $b;
+            }
+        }
+        dd {
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        b {
+            font-family: "Malgun Gothic", serif;
+        }
+        p {
+            position: relative;
+            margin: 10px 0;
+            padding-left: 12px;
+            opacity: 0.6;
+            font-size: 0.9em;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 3px;
+                height: 3px;
+                background-color: $b;
+            }
+        }
+        li {
+            position: relative;
+            margin-bottom: 10px;
+            padding-left: 20px;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 0;
+                width: 10px;
+                height: 3px;
+                background-color: $b;
+            }
+        }
+    }
+    .w100 {
+        b {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        p {
+            opacity: 0.8;
+        }
+    }
+    .lst-name {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        &.w100 li {
+            width: 100%;
+        }
+        &.w50 li {
+            width: 50%;
+        }
+        li {
+            width: 20%;
+            padding: 10px 0;
         }
     }
 }

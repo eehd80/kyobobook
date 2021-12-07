@@ -71,11 +71,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-52%, -50%);
+    transform: translate(-49%, -50%);
     display: block;
     font-family: "Line Awesome Free";
     font-weight: 900;
-    font-size: 20px;
+    font-size: 22px;
     color: #fff;
 }
 .snslist li .ico-home::before {
@@ -88,12 +88,10 @@
 .snslist li .ico-instagram::before {
     font-family: "Line Awesome Brands";
     content: "\f16d";
-    font-size: 22px;
 }
 .snslist li .ico-youtube::before {
     font-family: "Line Awesome Brands";
     content: "\f167";
-    font-size: 22px;
 }
 /* #footer .row-1 .sns-wrapper li:nth-child(2) i {
     font-size: 19px;

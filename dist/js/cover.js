@@ -15,21 +15,21 @@ $(document).ready(function () {
             } else {
                 $("#header").removeClass("sticky");
             }
-            if (current_top < sectoin01_top) {
-                console.log("sectoin01_top : " + sectoin01_top);
-                console.log("current_top : " + current_top);
-                $("ul.cover-list li").removeClass("current-chapter");
-                $("ul.cover-list li:nth-child(1)").addClass("current-chapter");
-            } else if (current_top < sectoin02_top) {
-                $("ul.cover-list li").removeClass("current-chapter");
-                $("ul.cover-list li:nth-child(2)").addClass("current-chapter");
-            } else {
-                $("ul.cover-list li").removeClass("current-chapter");
-                $("ul.cover-list li:nth-child(3)").addClass("current-chapter");
-            }
-            $(".arrow-bottom").click(function () {
-                $(window).scrollTop(sectoin01_top + navh);
-            });
+            // if (current_top < sectoin01_top) {
+            //     console.log("sectoin01_top : " + sectoin01_top);
+            //     console.log("current_top : " + current_top);
+            //     $("ul.cover-list li").removeClass("current-chapter");
+            //     $("ul.cover-list li:nth-child(1)").addClass("current-chapter");
+            // } else if (current_top < sectoin02_top) {
+            //     $("ul.cover-list li").removeClass("current-chapter");
+            //     $("ul.cover-list li:nth-child(2)").addClass("current-chapter");
+            // } else {
+            //     $("ul.cover-list li").removeClass("current-chapter");
+            //     $("ul.cover-list li:nth-child(3)").addClass("current-chapter");
+            // }
+            // $(".arrow-bottom").click(function () {
+            //     $(window).scrollTop(sectoin01_top + navh);
+            // });
         } else if (screenw < 992) {
             var sticky_top = screenh;
             if (current_top > sticky_top) {
@@ -39,28 +39,23 @@ $(document).ready(function () {
                 $("#nav").removeClass("sticky");
                 $("#list").css("margin-top", "0");
             }
-            $(".arrow-bottom").click(function () {
-                $(window).scrollTop(screenh);
-            });
+            // $(".arrow-bottom").click(function () {
+            //     $(window).scrollTop(screenh);
+            // });
         }
     });
 
     $(".cover-list a, .link-down").on("click", function (event) {
-        // Prevent default anchor click behavior
         event.preventDefault();
 
         // Store hash
         var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
         $("html, body").animate(
             {
                 scrollTop: $(hash).offset().top,
             },
             900,
             function () {
-                // Add hash (#) to URL when done scrolling (default click behavior)
                 window.location.hash = hash;
             },
         );

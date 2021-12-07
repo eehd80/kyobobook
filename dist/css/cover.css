@@ -163,7 +163,7 @@
 }
 
 section {
-    padding: 80px 40px 60px 40px;
+    padding: 120px 40px 60px 40px;
 }
 
 section h2 {
@@ -271,7 +271,7 @@ section ul li a:hover::after {
     overflow: hidden;
     position: absolute;
     bottom: 10px;
-    left: 30px;
+    left: 20px;
     text-align: left;
     transition: all 0.5s;
 }
@@ -436,6 +436,16 @@ section ul li a:hover p {
     }
     section ul li {
         width: calc(50% - 10px);
+        height: 300px;
+    }
+    section ul li,
+    section ul.col1 li,
+    section ul.col2 li:first-child,
+    section ul.col2 li {
+        height: 300px;
+    }
+    section ul.col2 li:first-child {
+        width: calc(50% - 10px);
     }
     section ul li.visible-xs {
         width: 100%;
@@ -574,4 +584,8 @@ section ul li a:hover p {
         width: calc(100% - 625px);
         left: 625px;
     }
+}
+
+.thumb-christ {
+    background-size: contain;
 }
