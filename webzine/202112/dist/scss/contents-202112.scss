@@ -11,8 +11,9 @@ textarea,
 button {
     font-size: calc(16px + 0.1vw);
     line-height: 1.5;
-    font-family: "GmarketSansMedium", "Malgun Gothic", "맑은 고딕", sans-serif;
+    font-family: "NanumSquare", "Malgun Gothic", "맑은 고딕", sans-serif;
     color: #111;
+    font-weight: 400;
 }
 
 @media (max-width: 991px) {
@@ -23,7 +24,7 @@ button {
     select,
     textarea,
     button {
-        font-size: calc(14px + 0.1vw);
+        font-size: calc(16px + 0.1vw);
     }
 }
 
@@ -94,7 +95,7 @@ button {
         .bar-txt {
             width: 90%;
             margin: auto;
-            font-family: "GmarketSansLight";
+            font-weight: 300;
         }
     }
     .cont-1 {
@@ -113,6 +114,9 @@ button {
             font-size: 0.9em;
         }
     }
+}
+
+#life1 {
     .cont-step {
         max-width: $maxWidth;
         margin: 0 auto;
@@ -138,7 +142,7 @@ button {
                 z-index: -1;
                 width: 19px;
                 height: 88px;
-                background: url(../../webzine/202112/images/img-ring.png) 0 0 / contain no-repeat;
+                background: url(../../images/img-ring.png) 0 0 / contain no-repeat;
             }
             &::before {
                 left: 10%;
@@ -213,7 +217,7 @@ button {
                 z-index: -1;
                 width: 19px;
                 height: 88px;
-                background: url(../../webzine/202112/images/img-ring.png) 0 0 / contain no-repeat;
+                background: url(../../images/img-ring.png) 0 0 / contain no-repeat;
             }
             &::before {
                 left: 10%;
@@ -222,6 +226,28 @@ button {
                 right: 10%;
             }
         }
+    }
+}
+
+// 투움바 파스타 만들기
+.life2-head {
+    position: relative;
+    height: 500px;
+    background: url(../../images/lifestory2-head.jpg) 0 0 no-repeat;
+    em {
+        background-color: $w;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba($b, 0.3);
+    }
+    .wrap-tit {
+        @include posXY;
     }
 }
 
@@ -241,6 +267,8 @@ button {
                 margin-bottom: 5px;
             }
         }
+    }
+    #life1 {
         .cont-step {
             width: 94%;
             margin: auto;
@@ -278,6 +306,7 @@ button {
         }
     }
 }
+
 @media (max-width: 576px) {
     .contentbody {
         .wrap-tit {
@@ -290,6 +319,8 @@ button {
                 font-size: 2.1em;
             }
         }
+    }
+    #life1 {
         .cont-1 {
             dl {
                 padding: 40px 5%;
