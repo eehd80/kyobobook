@@ -103,7 +103,7 @@
 	#bottomlist .showbtn img{margin-right: 3px;width: 15px;}
 }
 #bottomlist .coverlist{display: none;position: absolute;bottom: -29px;background: #3f3f3f;color: #d9d9d9;right: 6.8%;border: 1px solid #474747;padding: 5px 10px;font-size: 13px;}
-.contentbody {/*margin-top:70px;*/}
+.contentbody {margin-top:70px;}
 
 @media (max-width:500px) {
 	#midlist {padding: 2%;margin: 0 auto;margin-bottom: 25px;}	
@@ -129,9 +129,9 @@
 .gnb .container .col {background: none;}
 .gnb .container .col .wrapper{position:absolute;width: 482px;right:0;}
 .sidemenubg {position:fixed;background: black;opacity: 0.5;z-index:-1;top: 0;left: 0;right: 0;bottom: -100px;}
-.sidemenu {width: 482px !important;position: fixed;top: 0;bottom: -100px;padding-bottom: 100px;/* margin-bottom: 100px; */background:black;overflow-y:auto;}
+.sidemenu {width: 482px !important;position: fixed;top: 0;bottom: -100px;padding-bottom: 100px;margin-bottom: 100px;background:black;overflow-y:auto}
 .sidemenu .closebtn {position: absolute;top: 25px;right: 28px;font-size: 26px;color: white;cursor: pointer;}
-.sidemenu ul{padding: 41px 0px;margin: 30px 0px;margin-bottom: 20px;border-top: 1px solid #4d4d4d;border-bottom: 1px solid #4d4d4d;}
+.sidemenu ul{padding: 41px 0px;margin: 30px 0px;margin-bottom: 0;border-top: 1px solid #4d4d4d;border-bottom: 1px solid #4d4d4d;}
 .sidemenu li{margin: 12px 0px;position: relative;overflow: hidden;cursor: all-scroll;cursor: pointer;display: table;}
 .sidemenu .left {float: left;}
 .sidemenu .left img{width: 65px;height: 65px;}
@@ -143,13 +143,13 @@
 
 /*1단이면 중앙정렬*/
 @media (max-width:700px) {
-	.gnb .wrapper, .sidemenu {width: 61% !important;}
+	.gnb .wrapper, .sidemenu {width: 80% !important;}
 	.sidemenu{padding-left: 25px;}
-	.sidemenu .rootmenu_name {font-size: 34px;line-height: 34px;margin-left: -5px;}	
+	.sidemenu .rootmenu_name {font-size: 34px;line-height: 34px;}	
 	.sidemenu ul{padding: 31px 0px;margin: 20px 0px;}
 	.sidemenu li{margin: 6px 0px;margin-bottom: 10px;}
 	.sidemenu .left img{width: 45px;height: 45px;}	
-	.sidemenu .right{padding-left: 7px;}
+	.sidemenu .right{padding-left: 13px;}
 	.sidemenu .menu_name {font-size: 14px;color: #fff;}
 	.sidemenu .menu_description1 {font-size: 10px;color: #a8a8a8;}	
 }

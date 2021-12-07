@@ -50,3 +50,18 @@ legend {
     font-weight: normal;
     font-style: normal;
 }
+
+.pc {
+    display: block;
+}
+.m {
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .pc {
+        display: none;
+    }
+    .m {
+        display: block;
+    }
+}

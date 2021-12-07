@@ -1,0 +1,201 @@
+@charset "UTF-8";
+@import "variables", "mixin";
+
+.contentbody {
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: "GmarketSansMedium";
+    img {
+        display: block;
+        width: 100%;
+        max-width: $maxWidth;
+        margin: 0 auto;
+    }
+    .bg-box-top {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 300px;
+            background: $prim1;
+        }
+    }
+    .bg-box-bot {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            height: 300px;
+            background: $prim1;
+        }
+    }
+    .wrap-tit {
+        padding: 50px 0;
+        em {
+            display: inline-block;
+            min-width: 390px;
+            margin-bottom: 30px;
+            padding: 12px 50px 8px;
+            background: $prim1;
+            font-style: normal;
+            color: $w;
+            font-size: 1.3rem;
+        }
+        h2 {
+            color: $prim1;
+            line-height: 1.3;
+            font-size: 3em;
+            span {
+                display: block;
+                font-size: 0.77em;
+                font-family: "GmarketSansLight";
+            }
+        }
+    }
+
+    .wrap-bar {
+        margin-bottom: 50px;
+        padding: 50px 0;
+        background-color: rgba($prim1, 0.1);
+        .bar-txt {
+            width: 90%;
+            margin: auto;
+            font-family: "GmarketSansLight";
+        }
+    }
+    .cont-1 {
+        dl {
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            font-size: 1.3em;
+            color: $w;
+        }
+        dt {
+            margin-right: 20px;
+        }
+        dd {
+            @include ff-gl;
+            font-size: 0.9em;
+        }
+    }
+    .cont-step {
+        max-width: $maxWidth;
+        margin: 0 auto;
+        padding: 100px 0;
+        text-align: left;
+        .tit-step {
+            position: relative;
+            display: inline-block;
+            width: 50%;
+            margin-bottom: 25px;
+            padding: 12px 0 8px;
+            border: 3px solid $prim2;
+            border-radius: 20px;
+            font-size: 1.8em;
+            text-align: center;
+            color: $w;
+            background-color: #8cc06d;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -60px;
+                z-index: -1;
+                width: 19px;
+                height: 88px;
+                background: url(../../webzine/202112/images/img-ring.png) 0 0 / contain no-repeat;
+            }
+            &::before {
+                left: 10%;
+            }
+            &::after {
+                right: 10%;
+            }
+        }
+    }
+    .lst-step {
+        li {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 65px;
+            &:nth-child(even) {
+                .img {
+                    left: 0;
+                    right: auto;
+                }
+                .txt {
+                    padding: 0 5% 0 45%;
+                }
+            }
+            &:last-child {
+                .img {
+                    &::before,
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .txt {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 300px;
+            padding: 0 45% 0 5%;
+            border: 3px solid $prim2;
+            border-radius: 20px;
+            font-size: 1.8em;
+            strong {
+                display: block;
+                margin-bottom: 20px;
+                color: $prim2;
+            }
+            p {
+                font-size: 0.8em;
+                @include ff-gl;
+            }
+        }
+        .img {
+            display: flex;
+            @include posY;
+            right: 0;
+            width: 40%;
+            height: 331px;
+            object-fit: cover;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            img {
+                width: 100%;
+                &:nth-child(2) {
+                    margin-left: 5px;
+                }
+            }
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: -80px;
+                z-index: -1;
+                width: 19px;
+                height: 88px;
+                background: url(../../webzine/202112/images/img-ring.png) 0 0 / contain no-repeat;
+            }
+            &::before {
+                left: 10%;
+            }
+            &::after {
+                right: 10%;
+            }
+        }
+    }
+}
