@@ -1,6 +1,32 @@
 @charset "UTF-8";
 @import "variables", "mixin";
 
+/* 기본 폰트 설정 */
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+    font-size: calc(16px + 0.1vw);
+    line-height: 1.5;
+    font-family: "GmarketSansMedium", "Malgun Gothic", "맑은 고딕", sans-serif;
+    color: #111;
+}
+
+@media (max-width: 991px) {
+    body,
+    th,
+    td,
+    input,
+    select,
+    textarea,
+    button {
+        font-size: calc(14px + 0.1vw);
+    }
+}
+
 .contentbody {
     padding-bottom: 100px;
     text-align: center;
@@ -127,14 +153,16 @@
             position: relative;
             display: flex;
             justify-content: space-between;
+            height: 300px;
             margin-bottom: 65px;
+            padding: 0 45% 0 5%;
+            border: 3px solid $prim2;
+            border-radius: 20px;
             &:nth-child(even) {
+                padding: 0 5% 0 45%;
                 .img {
-                    left: 0;
+                    left: -4px;
                     right: auto;
-                }
-                .txt {
-                    padding: 0 5% 0 45%;
                 }
             }
             &:last-child {
@@ -151,10 +179,6 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            height: 300px;
-            padding: 0 45% 0 5%;
-            border: 3px solid $prim2;
-            border-radius: 20px;
             font-size: 1.8em;
             strong {
                 display: block;
@@ -169,13 +193,14 @@
         .img {
             display: flex;
             @include posY;
-            right: 0;
+            right: -4px;
             width: 40%;
-            height: 331px;
-            object-fit: cover;
+            height: 330px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             img {
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
                 &:nth-child(2) {
                     margin-left: 5px;
                 }
@@ -195,6 +220,87 @@
             }
             &::after {
                 right: 10%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contentbody {
+        padding-bottom: 50px;
+        .bg-box-top {
+            &::before {
+                display: none;
+            }
+        }
+        .cont-1 {
+            dl {
+                flex-direction: column;
+            }
+            dt {
+                margin-bottom: 5px;
+            }
+        }
+        .cont-step {
+            width: 94%;
+            margin: auto;
+            padding: 70px 0 50px;
+            .tit-step {
+                width: 100%;
+            }
+        }
+        .lst-step {
+            li {
+                flex-direction: column;
+                height: auto;
+                margin-bottom: 30px;
+                padding: 50px 5% 0;
+                &:nth-child(even) {
+                    padding: 50px 5% 0;
+                    .img {
+                        left: auto;
+                        right: auto;
+                    }
+                }
+            }
+            .img {
+                position: static;
+                // right: 3px;
+                width: 100%;
+                height: 400px;
+                margin: 10px 0 20px;
+                transform: none;
+                &::before,
+                &::after {
+                    bottom: -64px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .contentbody {
+        .wrap-tit {
+            em {
+                width: 94%;
+                min-width: 0;
+                margin: 0 auto 20px;
+            }
+            h2 {
+                font-size: 2.1em;
+            }
+        }
+        .cont-1 {
+            dl {
+                padding: 40px 5%;
+            }
+        }
+        .lst-step {
+            .txt {
+                font-size: 1.5em;
+            }
+            .img {
+                height: 300px;
             }
         }
     }
