@@ -52,16 +52,16 @@ legend {
 }
 
 .pc {
-    display: block;
+    display: block !important;
 }
 .m {
-    display: none;
+    display: none !important;
 }
 @media screen and (max-width: 992px) {
     .pc {
-        display: none;
+        display: none !important;
     }
     .m {
-        display: block;
+        display: block !important;
     }
 }
