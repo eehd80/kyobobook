@@ -16,20 +16,15 @@ button {
     font-weight: 400;
 }
 
-@media (max-width: 991px) {
-    body,
-    th,
-    td,
-    input,
-    select,
-    textarea,
-    button {
-        font-size: calc(16px + 0.1vw);
-    }
-}
 .container {
     max-width: $maxWidth;
     margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 96%;
+        margin: auto;
+    }
 }
 
 .link-list {
@@ -485,6 +480,57 @@ button {
     }
 }
 
+@media (max-width: 768px) {
+    .life2-head .pos-txt {
+        max-width: none;
+        width: 90%;
+        margin: auto;
+    }
+    .life2-wrap-cont1 .lst-step li {
+        width: 100%;
+    }
+    .life2-wrap-cont1 .col-right {
+        width: 60%;
+        padding-bottom: 0;
+    }
+    .life2-wrap-cont1 .col-left {
+        width: 35%;
+    }
+    .life2-head .wrap-tit {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .life2-head {
+        background-position: 70% 100%;
+        .pos-txt {
+            padding: 50px 0;
+        }
+        .wrap-tit {
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+    }
+    .life2-wrap-cont1 {
+        .container {
+            width: 100%;
+            flex-wrap: wrap;
+            &::before {
+                display: none;
+            }
+        }
+        .col-left {
+            width: 100%;
+            padding: 50px 4%;
+        }
+        .col-right {
+            width: 100%;
+            padding: 50px 4% 0;
+        }
+    }
+}
+
 /* esg */
 .special-head {
     padding: 100px 0;
@@ -502,7 +548,7 @@ button {
         line-height: 1.5;
         em {
             display: block;
-            margin-right: 25px;
+            // margin-right: 25px;
             margin-bottom: 20px;
             opacity: 0.9;
             font-size: 0.9em;
@@ -562,9 +608,63 @@ button {
         strong {
             display: block;
             margin: 70px 0 20px;
-            font-size: 1.2em;
+            font-size: 1.4em;
             color: $prim1;
             min-height: 65px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .special-head {
+        padding: 50px 0;
+        text-align: center;
+        .container {
+            height: 450px;
+            background-size: 50% auto;
+            background-position: 50% 100%;
+        }
+        .pos-txt {
+            width: 90%;
+            margin: auto;
+        }
+    }
+    .special-cont2 {
+        .img {
+            width: 300px;
+            margin: 0 auto;
+        }
+        ul {
+            flex-wrap: wrap;
+            li {
+                width: 100%;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .special-head {
+        .container {
+            height: 310px;
+        }
+        .wrap-tit {
+            font-size: 1.2em;
+        }
+    }
+    .special-cont1 {
+        margin: 50px 0;
+        .container {
+            flex-direction: column;
+        }
+        .img {
+            width: 100%;
+        }
+        .txt {
+            width: 100%;
+            margin-top: 50px;
+            strong {
+                margin-bottom: 20px;
+            }
         }
     }
 }
@@ -746,6 +846,46 @@ button {
     }
 }
 
+@media (max-width: 768px) {
+    .kyobo2-head {
+        padding: 20px 0;
+    }
+    .kyobo2-cont1 {
+        margin-top: 30px;
+    }
+    .lst-times .lst-name {
+        li {
+            width: 50%;
+        }
+    }
+    .lst-times .lst-name.w50 {
+        li {
+            width: 100%;
+        }
+    }
+}
+@media (max-width: 576px) {
+    .kyobo2-head {
+        .container {
+            height: 150px;
+        }
+        .wrap-tit {
+            transform: translate(-50%, -50%) scale(0.7);
+            transform-origin: 50%;
+        }
+    }
+    .lst-times > li {
+        width: 100%;
+        border-right: none;
+    }
+    .lst-times > li.w100 > div {
+        width: 100%;
+    }
+    .lst-times .lst-name li {
+        width: 100%;
+    }
+}
+
 #kyobo1 {
     .kyobo1-head {
         padding: 30px 0;
@@ -860,6 +1000,69 @@ button {
         }
     }
 }
+@media (max-width: 768px) {
+    #kyobo1 {
+        .kyobo1-head {
+            padding: 0;
+            .bg-box-bot {
+                padding-bottom: 20px;
+            }
+            em {
+                min-width: 0;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+        .kyobo1-cont1 .container {
+            flex-wrap: wrap;
+            .img {
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            .txt {
+                width: 100%;
+            }
+        }
+        .kyobo1-cont2 {
+            margin-top: 50px;
+            &::before {
+                height: 151px;
+            }
+            .container {
+                flex-wrap: wrap;
+                background-color: #f3f2f0;
+                .img {
+                    width: 30%;
+                }
+                .txt {
+                    width: 60%;
+                    padding: 30px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #kyobo1 {
+        .kyobo1-head h2 {
+            font-size: 1.5em;
+        }
+        .wrap-bar {
+            padding: 30px 0;
+            .bar-txt {
+                font-size: 0.9em;
+            }
+        }
+    }
+    #kyobo1 .kyobo1-cont2 .container .img {
+        width: 100%;
+    }
+    #kyobo1 .kyobo1-cont2 .container .txt {
+        width: 100%;
+    }
+}
 
 .kyobo3-head {
     padding: 70px 0 20px;
@@ -968,5 +1171,57 @@ button {
         background-color: #84278a;
         color: $w;
         border-radius: 56px;
+    }
+}
+
+.wrap-youtube {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+    }
+}
+
+@media (max-width: 768px) {
+    .kyobo3-head {
+        padding-top: 40px;
+        .img {
+            width: 40%;
+            margin-bottom: 30px;
+        }
+        .txt {
+            font-size: 1em;
+        }
+    }
+    .kyobo3-cont1 {
+        margin-bottom: 100px;
+    }
+    .kyobo3-cont1 .img {
+        display: none;
+    }
+    .kyobo3-cont1 .txt {
+        margin-top: 50px;
+    }
+    .kyobo3-cont1 .txt ul li {
+        width: 100%;
+    }
+    .kyobo3-cont1::before {
+        height: 170px;
+    }
+}
+
+@media (max-width: 576px) {
+    .kyobo3-cont1 {
+        margin-bottom: 50px;
+        padding-top: 30px;
+        .txt strong {
+            font-size: 1.2em;
+        }
     }
 }
