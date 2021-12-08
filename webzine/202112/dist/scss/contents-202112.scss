@@ -1,8 +1,6 @@
 @charset "UTF-8";
 @import "variables", "mixin";
 
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
-
 /* 기본 폰트 설정 */
 body,
 th,
@@ -13,7 +11,7 @@ textarea,
 button {
     font-size: 16px;
     line-height: 1.5;
-    font-family: "Noto Sans KR", "Malgun Gothic", "맑은 고딕", sans-serif;
+    font-family: "NanumSquareRound", "Malgun Gothic", "맑은 고딕", sans-serif;
     color: #111;
     font-weight: 400;
 }
@@ -24,7 +22,7 @@ button {
 }
 @media (max-width: 768px) {
     .container {
-        width: 96%;
+        width: 92%;
         margin: auto;
     }
 }
@@ -80,7 +78,7 @@ button {
         padding: 50px 0;
         background-color: rgba($prim1, 0.1);
         .bar-txt {
-            width: 90%;
+            width: 92%;
             margin: auto;
         }
     }
@@ -254,7 +252,7 @@ button {
             }
         }
         .cont-step {
-            width: 94%;
+            width: 92%;
             margin: auto;
             padding: 70px 0 50px;
             .tit-step {
@@ -525,7 +523,7 @@ button {
         }
         .col-left {
             width: 100%;
-            padding: 50px 4%;
+            padding: 50px 4% 10px;
         }
         .col-right {
             width: 100%;
@@ -783,7 +781,7 @@ button {
     }
     > li {
         width: 50%;
-        padding: 60px 2% 20px;
+        padding: 60px 0 20px;
         border-right: 1px solid rgba($b, 0.1);
         border-bottom: 1px solid rgba($b, 0.1);
         &.w100 {
@@ -915,6 +913,7 @@ button {
     }
     .lst-times > li {
         width: 100%;
+        padding-top: 20px;
         border-right: none;
     }
     .lst-times > li.w100 > div {
