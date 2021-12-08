@@ -1086,7 +1086,7 @@ button {
 }
 
 .kyobo3-cont1.green .img {
-  bottom: -120px;
+  bottom: -40px;
 }
 
 .kyobo3-cont1.green .link-more {
@@ -1102,7 +1102,7 @@ button {
 }
 
 .kyobo3-cont1.blue .img {
-  bottom: -120px;
+  bottom: -60px;
 }
 
 .kyobo3-cont1.blue .link-more {
@@ -1142,7 +1142,7 @@ button {
 
 .kyobo3-cont1 .img {
   position: absolute;
-  bottom: -50px;
+  bottom: 50px;
   right: 0;
   width: 35%;
 }
