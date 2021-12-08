@@ -336,8 +336,9 @@ button {
   #life1 .cont-1 dl {
     padding: 40px 5%;
   }
-  #life1 .lst-step .txt {
-    font-size: 1.5em;
+  #life1 .lst-step .txt strong {
+    margin-bottom: 10px;
+    font-size: 1.1em;
   }
   #life1 .lst-step .img {
     height: 300px;
@@ -437,7 +438,6 @@ button {
 }
 
 .life2-wrap-cont1 h3 {
-  font-family: "GmarketSansMedium";
   margin-bottom: 20px;
   font-size: 2em;
   text-align: center;
@@ -469,7 +469,6 @@ button {
   display: block;
   margin-bottom: 5px;
   color: #ee7f51;
-  font-family: "GmarketSansMedium";
 }
 
 .life2-wrap-cont1 .lst-step {
@@ -763,6 +762,10 @@ button {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .special-cont1 ul li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .special-cont1 .img {
     width: 100%;
   }
@@ -772,6 +775,17 @@ button {
   }
   .special-cont1 .txt strong {
     margin-bottom: 20px;
+  }
+  .special-cont2 ul > li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .special-cont2 ul > li .img {
+    width: 100%;
+  }
+  .special-cont2 ul > li .txt {
+    margin-top: 30px;
+    width: 100%;
   }
 }
 
@@ -1012,6 +1026,9 @@ button {
   .lst-times .lst-name.w50 li {
     width: 100%;
   }
+  .lst-times > li {
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1066,7 +1083,6 @@ button {
 #kyobo1 .kyobo1-head h2 span {
   display: block;
   font-size: 0.77em;
-  font-family: "GmarketSansLight";
 }
 
 #kyobo1 .kyobo1-head .bg-box-bot {
@@ -1080,8 +1096,9 @@ button {
 
 #kyobo1 .kyobo1-head .wrap-bar {
   background-color: #4dab24;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  letter-spacing: -0.05em;
 }
 
 #kyobo1 .wrap-cont {
@@ -1132,21 +1149,19 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-family: "GmarketSansMedium";
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 #kyobo1 .kyobo1-cont2 .container .txt {
-  padding-top: 130px;
+  padding-bottom: 80px;
 }
 
 #kyobo1 .mark {
   position: relative;
   display: block;
   padding: 70px 0;
-  font-family: "GmarketSansMedium";
   font-size: 1.2em;
 }
 
@@ -1212,13 +1227,12 @@ button {
   #kyobo1 .kyobo1-cont2 .container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    background-color: #f3f2f0;
   }
   #kyobo1 .kyobo1-cont2 .container .img {
     width: 30%;
   }
   #kyobo1 .kyobo1-cont2 .container .txt {
-    width: 60%;
+    width: 65%;
     padding: 30px 0;
   }
 }
@@ -1232,6 +1246,18 @@ button {
   }
   #kyobo1 .wrap-bar .bar-txt {
     font-size: 0.9em;
+  }
+  #kyobo1 .kyobo1-cont2::before {
+    height: 330px;
+  }
+  #kyobo1 .mark {
+    text-align: center;
+    font-size: 1em;
+  }
+  #kyobo1 .mark::before, #kyobo1 .mark::after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   #kyobo1 .kyobo1-cont2 .container .img {
     width: 100%;
@@ -1267,7 +1293,6 @@ button {
 }
 
 .kyobo3-head .txt {
-  font-family: "GmarketSansMedium";
   font-size: 1.1em;
   opacity: 0.8;
 }

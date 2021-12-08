@@ -310,7 +310,11 @@ button {
         }
         .lst-step {
             .txt {
-                font-size: 1.5em;
+                // font-size: 1.5em;
+                strong {
+                    margin-bottom: 10px;
+                    font-size: 1.1em;
+                }
             }
             .img {
                 height: 300px;
@@ -398,7 +402,6 @@ button {
         padding: 50px 0;
     }
     h3 {
-        @include ff-gm;
         margin-bottom: 20px;
         font-size: 2em;
         text-align: center;
@@ -424,7 +427,6 @@ button {
             display: block;
             margin-bottom: 5px;
             color: #ee7f51;
-            @include ff-gm;
         }
     }
     .lst-step {
@@ -675,6 +677,9 @@ button {
         .container {
             flex-direction: column;
         }
+        ul li {
+            flex-wrap: wrap;
+        }
         .img {
             width: 100%;
         }
@@ -683,6 +688,18 @@ button {
             margin-top: 50px;
             strong {
                 margin-bottom: 20px;
+            }
+        }
+    }
+    .special-cont2 {
+        ul > li {
+            flex-wrap: wrap;
+            .img {
+                width: 100%;
+            }
+            .txt {
+                margin-top: 30px;
+                width: 100%;
             }
         }
     }
@@ -882,6 +899,9 @@ button {
             width: 100%;
         }
     }
+    .lst-times > li {
+        padding-top: 40px;
+    }
 }
 @media (max-width: 576px) {
     .kyobo2-head {
@@ -930,7 +950,6 @@ button {
             span {
                 display: block;
                 font-size: 0.77em;
-                font-family: "GmarketSansLight";
             }
         }
         .bg-box-bot {
@@ -942,8 +961,9 @@ button {
         }
         .wrap-bar {
             background-color: rgba($prim1, 1);
-            color: rgba($w, 0.5);
+            color: rgba($w, 0.8);
             text-align: center;
+            letter-spacing: -0.05em;
         }
     }
     .wrap-cont {
@@ -980,10 +1000,9 @@ button {
         }
         .container {
             display: flex;
-            align-items: center;
-            @include ff-gm;
+            align-items: flex-end;
             .txt {
-                padding-top: 130px;
+                padding-bottom: 80px;
             }
         }
     }
@@ -991,7 +1010,6 @@ button {
         position: relative;
         display: block;
         padding: 70px 0;
-        @include ff-gm;
         font-size: 1.2em;
         span {
             color: #64bca2;
@@ -1051,12 +1069,12 @@ button {
             }
             .container {
                 flex-wrap: wrap;
-                background-color: #f3f2f0;
+                // background-color: #f3f2f0;
                 .img {
                     width: 30%;
                 }
                 .txt {
-                    width: 60%;
+                    width: 65%;
                     padding: 30px 0;
                 }
             }
@@ -1073,6 +1091,20 @@ button {
             padding: 30px 0;
             .bar-txt {
                 font-size: 0.9em;
+            }
+        }
+        .kyobo1-cont2 {
+            &::before {
+                height: 330px;
+            }
+        }
+        .mark {
+            text-align: center;
+            font-size: 1em;
+            &::before,
+            &::after {
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }
@@ -1099,7 +1131,6 @@ button {
         margin-bottom: 40px;
     }
     .txt {
-        @include ff-gm;
         font-size: 1.1em;
         opacity: 0.8;
         b {
@@ -1234,6 +1265,8 @@ button {
     }
     .kyobo3-cont1::before {
         height: 170px;
+    }
+    .kyobo3-cont1 .link-more {
     }
 }
 
