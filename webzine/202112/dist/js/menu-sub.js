@@ -28,4 +28,23 @@ $(document).ready(function () {
     //     $("ul.cover-list li").removeClass("current-chapter");
     //     $("ul.cover-list li:nth-child(3)").addClass("current-chapter");
     // }
+
+    $(".topbar-list .list-wrapper ul:first-child").mouseenter(function () {
+        $(".cover-list li:first-child span").addClass("on");
+    });
+    $(".topbar-list .list-wrapper ul:first-child").mouseleave(function () {
+        $(".cover-list li:first-child span").removeClass("on");
+    });
+    $(".topbar-list .list-wrapper ul:nth-child(2)").mouseenter(function () {
+        $(".cover-list li:nth-child(2) span").addClass("on");
+    });
+    $(".topbar-list .list-wrapper ul:nth-child(2)").mouseleave(function () {
+        $(".cover-list li:nth-child(2) span").removeClass("on");
+    });
+    $(".topbar-list .list-wrapper ul:nth-child(3)").mouseenter(function () {
+        $(".cover-list li:nth-child(3) span").addClass("on");
+    });
+    $(".topbar-list .list-wrapper ul:nth-child(3)").mouseleave(function () {
+        $(".cover-list li:nth-child(3) span").removeClass("on");
+    });
 });

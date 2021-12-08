@@ -79,9 +79,19 @@
 }
 
 #nav > ul > li span {
+    position: relative;
     height: 80px;
     display: inline-block;
     cursor: pointer;
+}
+#nav > ul > li span.on::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #0063b2;
 }
 
 #nav > ul > li:hover span::after,
