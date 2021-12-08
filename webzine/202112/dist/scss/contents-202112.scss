@@ -583,7 +583,7 @@ button {
         margin-bottom: 70px;
         font-size: 1.9em;
         letter-spacing: -0.05em;
-        line-height: 1.5;
+        line-height: 1.3;
         em {
             display: block;
             // margin-right: 25px;
@@ -596,6 +596,10 @@ button {
         strong {
             display: block;
             color: $w;
+            b {
+                display: block;
+                font-size: 1.3em;
+            }
         }
         span {
             display: block;
@@ -701,7 +705,7 @@ button {
 @media (max-width: 576px) {
     .special-head {
         .container {
-            height: 310px;
+            height: 290px;
         }
         .wrap-tit {
             font-size: 1.2em;
