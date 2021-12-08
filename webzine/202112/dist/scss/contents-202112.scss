@@ -477,11 +477,15 @@ button {
 }
 
 @media (max-width: 768px) {
-    .life2-head .pos-txt {
-        max-width: none;
-        width: 90%;
-        margin: auto;
+    .life2-head {
+        background: url(../../images/lifestory2-head-m.jpg) 70% 100% / cover no-repeat;
+        .pos-txt {
+            max-width: none;
+            width: 90%;
+            margin: auto;
+        }
     }
+
     .life2-wrap-cont1 .lst-step li {
         width: 100%;
     }
@@ -499,7 +503,6 @@ button {
 
 @media (max-width: 576px) {
     .life2-head {
-        background-position: 70% 100%;
         .pos-txt {
             padding: 50px 0;
         }
