@@ -862,22 +862,23 @@ button {
 }
 
 .kyobo3-head {
-    padding: 100px 0 20px;
+    padding: 70px 0 20px;
     background-color: #84278a;
     color: $w;
-    text-align: left;
+    text-align: center;
     .container {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
     .img {
         width: 20%;
+        margin-bottom: 40px;
     }
     .txt {
-        width: 50%;
-        margin-left: 100px;
         @include ff-gm;
+        font-size: 1.1em;
+        opacity: 0.8;
         b {
             font-size: 1.3em;
         }

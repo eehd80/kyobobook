@@ -1028,19 +1028,20 @@ button {
 }
 
 .kyobo3-head {
-  padding: 100px 0 20px;
+  padding: 70px 0 20px;
   background-color: #84278a;
   color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
 .kyobo3-head .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1048,12 +1049,13 @@ button {
 
 .kyobo3-head .img {
   width: 20%;
+  margin-bottom: 40px;
 }
 
 .kyobo3-head .txt {
-  width: 50%;
-  margin-left: 100px;
   font-family: "GmarketSansMedium";
+  font-size: 1.1em;
+  opacity: 0.8;
 }
 
 .kyobo3-head .txt b {
