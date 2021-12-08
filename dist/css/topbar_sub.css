@@ -273,6 +273,7 @@
     /* padding-top:2px; */
     width: calc(100% - 58px);
     float: left;
+    font-family: "GmarketSansMedium";
 }
 
 .topbar-list .list-wrapper > ul li .right .menu_description1 {

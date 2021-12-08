@@ -15,7 +15,7 @@ button {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -44,7 +44,7 @@ button {
 .contentbody img {
   display: block;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -87,7 +87,6 @@ button {
 .contentbody .wrap-bar .bar-txt {
   width: 90%;
   margin: auto;
-  font-weight: 300;
 }
 
 #life1 .wrap-tit {
@@ -114,7 +113,6 @@ button {
 #life1 .wrap-tit h2 span {
   display: block;
   font-size: 0.77em;
-  font-family: "GmarketSansLight";
 }
 
 #life1 .cont-1 dl {
@@ -131,15 +129,17 @@ button {
 
 #life1 .cont-1 dt {
   margin-right: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #life1 .cont-1 dd {
-  font-family: "GmarketSansLight";
+  padding-top: 5px;
   font-size: 0.9em;
 }
 
 #life1 .cont-step {
-  max-width: 1280px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 100px 0;
   text-align: left;
@@ -217,18 +217,13 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  font-size: 1.8em;
 }
 
 #life1 .lst-step .txt strong {
   display: block;
   margin-bottom: 20px;
   color: #0063b2;
-}
-
-#life1 .lst-step .txt p {
-  font-size: 0.8em;
-  font-family: "GmarketSansLight";
+  font-size: 1.5em;
 }
 
 #life1 .lst-step .img {
@@ -368,7 +363,7 @@ button {
 .life2-head .pos-txt {
   position: relative;
   width: 100%;
-  max-width: 1280px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 100px 0;
   opacity: 1;
@@ -663,6 +658,7 @@ button {
 .special-cont1 .txt {
   width: 55%;
   text-align: left;
+  text-align: justify;
 }
 
 .special-cont1 .txt strong {
@@ -675,22 +671,39 @@ button {
   color: #fff;
 }
 
-.special-cont2 ul {
+.special-cont2 ul > li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  margin-bottom: 100px;
+  text-align: left;
 }
 
-.special-cont2 ul > li {
+.special-cont2 ul > li .img {
   width: 30%;
-  text-align: left;
+}
+
+.special-cont2 ul > li .img span {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.special-cont2 ul > li .txt {
+  width: 65%;
+  text-align: justify;
 }
 
 .special-cont2 ul > li:nth-child(2) strong {
   color: #ee7e52;
+}
+
+.special-cont2 ul > li:nth-child(3) {
+  margin-bottom: 0;
 }
 
 .special-cont2 ul > li:nth-child(3) strong {
@@ -699,7 +712,7 @@ button {
 
 .special-cont2 .txt strong {
   display: block;
-  margin: 70px 0 20px;
+  margin: 0 0 20px;
   font-size: 1.4em;
   color: #4dab24;
   min-height: 65px;
@@ -1089,6 +1102,7 @@ button {
 
 #kyobo1 .wrap-cont .txt {
   width: 55%;
+  text-align: justify;
 }
 
 #kyobo1 .wrap-cont .txt strong {
@@ -1109,7 +1123,7 @@ button {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 310px;
+  height: 284px;
   background-color: #f3f2f0;
 }
 
@@ -1228,7 +1242,7 @@ button {
 
 .kyobo3-head {
   padding: 70px 0 20px;
-  background-color: #84278a;
+  background-color: #832289;
   color: #fff;
   text-align: center;
 }
@@ -1275,7 +1289,7 @@ button {
   left: 0;
   right: 0;
   height: 400px;
-  background: #84278a;
+  background: #832289;
 }
 
 .kyobo3-cont1.green::before {
@@ -1329,6 +1343,7 @@ button {
   width: 60%;
   margin-bottom: 15px;
   padding-left: 25px;
+  text-align: justify;
 }
 
 .kyobo3-cont1 .txt ul li::before {
@@ -1353,7 +1368,7 @@ button {
   margin-top: 20px;
   padding: 15px 30px;
   text-align: center;
-  background-color: #84278a;
+  background-color: #832289;
   color: #fff;
   border-radius: 56px;
 }
