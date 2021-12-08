@@ -80,7 +80,14 @@ button {
         .bar-txt {
             width: 92%;
             margin: auto;
+            font-size: 18px;
         }
+    }
+}
+
+@media (max-width: 576px) {
+    .contentbody .wrap-bar .bar-txt {
+        font-size: 17px;
     }
 }
 
@@ -231,6 +238,25 @@ button {
             }
         }
     }
+    .head {
+        .wrap-bar {
+            .bar-txt {
+                position: relative;
+                padding-left: 400px;
+                text-align: left;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: 100px;
+                    transform: translateY(-50%);
+                    width: 250px;
+                    height: 180px;
+                    background: url(../../images/lifestory1-img.png) 0 50% / contain no-repeat;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -290,6 +316,17 @@ button {
 }
 
 @media (max-width: 576px) {
+    #life1 .head {
+        .wrap-bar .bar-txt {
+            padding-left: 0;
+            padding-top: 120px;
+            &::before {
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
     #life1 {
         .wrap-tit {
             em {
@@ -983,6 +1020,7 @@ button {
                 margin-bottom: 20px;
                 color: #ee7e52;
                 font-size: 1.2em;
+                letter-spacing: -0.05em;
             }
         }
     }

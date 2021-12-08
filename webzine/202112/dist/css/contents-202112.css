@@ -87,6 +87,13 @@ button {
 .contentbody .wrap-bar .bar-txt {
   width: 92%;
   margin: auto;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  .contentbody .wrap-bar .bar-txt {
+    font-size: 17px;
+  }
 }
 
 #life1 .wrap-tit {
@@ -270,6 +277,24 @@ button {
   right: 10%;
 }
 
+#life1 .head .wrap-bar .bar-txt {
+  position: relative;
+  padding-left: 400px;
+  text-align: left;
+}
+
+#life1 .head .wrap-bar .bar-txt::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 250px;
+  height: 180px;
+  background: url(../../images/lifestory1-img.png) 0 50%/contain no-repeat;
+}
+
 @media (max-width: 768px) {
   .contentbody {
     padding-bottom: 50px;
@@ -324,6 +349,16 @@ button {
 }
 
 @media (max-width: 576px) {
+  #life1 .head .wrap-bar .bar-txt {
+    padding-left: 0;
+    padding-top: 120px;
+  }
+  #life1 .head .wrap-bar .bar-txt::before {
+    top: -50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
   #life1 .wrap-tit em {
     width: 94%;
     min-width: 0;
@@ -1129,6 +1164,7 @@ button {
   margin-bottom: 20px;
   color: #ee7e52;
   font-size: 1.2em;
+  letter-spacing: -0.05em;
 }
 
 #kyobo1 .kyobo1-cont2 {
